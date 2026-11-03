@@ -2,160 +2,559 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>実りのシトリン｜みづき</title>
+<meta name="theme-color" content="#090b12">
+<title>実りのシトリン｜鑑定で選ばれたあなたへ｜みづき</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Serif+JP:wght@400;600&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");</script>
 <style>
-:root{--ink:#2f2a22;--sub:#6b5f4a;--gold:#8a6a10;--gold2:#b8860b;--bg:#fffaf0;--line:#eadfc4;--soft:#fff3d6;--night:#1d2433}
+:root{
+  --night:#090b12; --navy:#0d1120; --navy2:#131a2e;
+  --gold:#d4af37; --gold-soft:#c9a663; --gold-hi:#f3e6c4; --sand:#ece0c2;
+  --body:#dcd3bf; --dim:#aea591;
+  --paper:#f4ecd8; --paper-ink:#3d321d;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --mincho:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN",serif;
+  --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","Noto Sans JP",sans-serif;
+  --latin:"Cormorant Garamond",Georgia,serif;
+  --foil:linear-gradient(100deg,#b8913f 0%,#f3e2a6 48%,#c69a45 100%);
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:2;font-size:16px;-webkit-text-size-adjust:100%}
-main{max-width:640px;margin:auto;padding:0 20px 120px}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-section:last-of-type{border-bottom:0}
-.hero{background:var(--night);color:#f6efe0;margin:0 -20px;padding:64px 24px 52px;border-bottom:0}
-.hero .eyebrow{color:#e8c46a}
-.hero h1{color:#f6efe0}
-.hero .lead{color:#e8c46a;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:22px;margin:24px 0 8px}
-.hero small{color:#c9bfa8}
-h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:25px;line-height:1.75;margin:12px 0 0;font-weight:600}
-h2{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:20px;line-height:1.7;color:var(--gold);margin:0 0 16px;font-weight:600}
-p{margin:0 0 1.3em}
-img{display:block;width:100%;height:auto;border-radius:6px}
-.eyebrow{letter-spacing:.3em;font-size:13px;color:var(--gold);margin:0}
-.cap{font-size:13px;color:var(--sub);text-align:center;margin:8px 0 20px}
-ul.signs{list-style:none;padding:0;margin:0 0 1.3em}
-ul.signs li{padding:10px 0 10px 28px;border-bottom:1px dashed var(--line);position:relative}
-ul.signs li:before{content:"";position:absolute;left:4px;top:20px;width:12px;height:12px;border:2px solid var(--gold2);border-radius:50%}
-.box{background:var(--soft);border-left:3px solid var(--gold2);padding:16px 18px;margin:24px 0;border-radius:0 6px 6px 0}
-.box p:last-child{margin:0}
-.price{font-size:30px;font-weight:bold;color:var(--gold);margin:0 0 4px}
-table{width:100%;border-collapse:collapse;margin:8px 0 20px;font-size:15px}
-th,td{border-bottom:1px solid var(--line);padding:10px 6px;text-align:left;vertical-align:top}
-th{width:34%;color:var(--sub);font-weight:normal}
-.btn{display:block;text-align:center;background:var(--gold2);color:#fff;text-decoration:none;font-weight:bold;font-size:18px;padding:22px 16px;border-radius:8px;margin:8px 0 24px;box-shadow:0 4px 0 var(--gold)}
-.btn small{display:block;color:#fff3d6;font-size:13px;font-weight:normal;margin-top:4px}
-.wait{border:2px solid var(--gold2);border-radius:8px;text-align:center;padding:20px 16px;font-weight:bold;font-size:17px;line-height:1.8;margin:8px 0 24px;background:var(--soft)}
-.bar{position:fixed;left:0;right:0;bottom:0;background:rgba(255,250,240,.96);border-top:1px solid var(--line);padding:10px 16px}
-.bar a,.bar span{display:block;max-width:600px;margin:auto;text-align:center;background:var(--gold2);color:#fff;text-decoration:none;font-weight:bold;font-size:17px;padding:15px;border-radius:8px}
-.bar span{background:#cdbb8c}
-.qa dt{font-weight:bold;margin-top:18px}
-.qa dd{margin:4px 0 0}
-small{color:var(--sub);font-size:13.5px;display:block;line-height:1.8}
-.sig{text-align:right;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--body);font-family:var(--serif);font-size:16.5px;line-height:2.1;letter-spacing:.03em;font-feature-settings:"palt" 1;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+p{margin:0 0 1.6em}
+p:last-child{margin-bottom:0}
+em{font-style:normal;color:var(--gold-hi)}
+strong{color:var(--sand);font-weight:600}
+h1,h2,h3{font-family:var(--mincho)}
+.wrap{max-width:600px;margin:0 auto;padding:0 24px}
 [hidden]{display:none!important}
+
+/* reveal */
+html.js .rv>*{opacity:0;transform:translateY(24px);transition:opacity 1.1s cubic-bezier(.22,.6,.24,1),transform 1.1s cubic-bezier(.22,.6,.24,1)}
+html.js .rv.on>*{opacity:1;transform:none}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;background:#000}
+.hero-img{position:absolute;inset:0;background:url("img/hero_citrine.jpg") center bottom/100% auto no-repeat;animation:kenburns 16s cubic-bezier(.16,.6,.34,1) both}
+.hero-veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.15) 36%,rgba(0,0,0,0) 55%,rgba(9,11,18,.35) 80%,var(--night) 100%)}
+#dust{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:9svh 16px 0}
+.hero-kicker{display:inline-block;position:relative;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.2em;text-indent:.2em;color:var(--gold-hi);padding:9px 14px;margin-bottom:28px;white-space:nowrap;animation:fade 1.6s cubic-bezier(.22,.6,.24,1) .3s both}
+.hero-kicker::before,.hero-kicker::after{content:"";position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(243,230,196,.8),transparent);transform:scaleX(0);animation:line 1.4s cubic-bezier(.22,.6,.24,1) .9s both}
+.hero-kicker::before{top:0}.hero-kicker::after{bottom:0}
+.hero-en{font-family:var(--latin);font-size:13px;letter-spacing:.5em;text-indent:.5em;color:var(--gold-soft);margin:0 0 6px;animation:fade 1.6s ease .5s both}
+.hero-title{font-size:38px;font-weight:700;letter-spacing:.18em;text-indent:.18em;line-height:1.5;color:#f8efd6;margin:0 0 16px;text-shadow:0 2px 30px rgba(0,0,0,.8);animation:title 2s cubic-bezier(.19,.7,.26,1) .55s both}
+.hero-title .gg{background:linear-gradient(175deg,#fbf0c9 15%,#e2bf6a 55%,#f6e3a5 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-family:var(--mincho);font-size:16px;font-weight:600;letter-spacing:.2em;text-indent:.2em;color:var(--gold-hi);margin:0 0 26px;text-shadow:0 2px 16px rgba(0,0,0,.9);animation:fade 1.6s ease 1.05s both}
+.hero-limit{display:inline-block;position:relative;overflow:hidden;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.06em;text-indent:.06em;white-space:nowrap;color:#1d1507;background:var(--foil);padding:10px 22px;border-radius:2px;box-shadow:0 8px 30px rgba(0,0,0,.6);animation:fade 1.6s ease 1.35s both}
+.hero-limit::after{content:"";position:absolute;top:-40%;bottom:-40%;left:-70%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.75) 50%,transparent);transform:skewX(-18deg);animation:sheen 4.4s ease-in-out 2.4s infinite}
+.hero-foot{position:relative;z-index:2;margin-top:auto;text-align:center;padding:0 20px 26px}
+.hero-cap{font-family:var(--sans);font-size:11px;letter-spacing:.12em;color:rgba(236,224,194,.7);margin:0 0 14px}
+.scroll-cue{width:1px;height:56px;margin:0 auto;overflow:hidden;position:relative}
+.scroll-cue::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--gold-hi),transparent);animation:drip 2.6s cubic-bezier(.45,.05,.35,1) 2s infinite}
+@keyframes kenburns{from{transform:scale(1.1)}to{transform:scale(1)}}
+@keyframes line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes title{from{opacity:0;transform:translateY(18px);letter-spacing:.34em}to{opacity:1;transform:none;letter-spacing:.18em}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes sheen{0%{left:-70%}40%,100%{left:130%}}
+@keyframes drip{0%{transform:translateY(-100%)}60%{transform:translateY(0)}100%{transform:translateY(102%)}}
+
+/* ===== sections ===== */
+section{padding:88px 0;position:relative}
+.sec-a{background:var(--night)}
+.sec-b{background:linear-gradient(180deg,var(--night) 0%,var(--navy) 12%,var(--navy) 88%,var(--night) 100%)}
+.sec-b::before{content:"";position:absolute;left:0;right:0;top:0;height:240px;pointer-events:none;background:radial-gradient(ellipse 70% 100% at 50% 0%,rgba(212,175,55,.06),transparent 70%)}
+.kicker{display:block;text-align:center;font-family:var(--latin);font-size:13px;font-weight:600;letter-spacing:.42em;text-indent:.42em;color:var(--gold);margin-bottom:14px}
+h2{font-size:25px;font-weight:700;letter-spacing:.1em;line-height:1.8;color:var(--sand);text-align:center;margin:0 0 20px;text-wrap:balance}
+.orn{display:flex;align-items:center;justify-content:center;gap:12px;margin:0 auto 40px}
+.orn::before,.orn::after{content:"";height:1px;width:64px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.75))}
+.orn::after{background:linear-gradient(90deg,rgba(212,175,55,.75),transparent)}
+.orn i{width:6px;height:6px;display:block;background:var(--gold);transform:rotate(45deg);box-shadow:0 0 12px rgba(212,175,55,.6)}
+.center{text-align:center}
+.nw{display:inline-block}
+.band{height:90px;background-image:url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cg fill='none' stroke='%23d4af37' stroke-opacity='.12' stroke-width='1'%3E%3Ccircle cx='0' cy='60' r='56'/%3E%3Ccircle cx='0' cy='60' r='42'/%3E%3Ccircle cx='60' cy='60' r='56'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Ccircle cx='120' cy='60' r='56'/%3E%3Ccircle cx='120' cy='60' r='42'/%3E%3Ccircle cx='30' cy='30' r='56'/%3E%3Ccircle cx='90' cy='30' r='56'/%3E%3C/g%3E%3C/svg%3E");background-size:112px 56px;-webkit-mask-image:linear-gradient(180deg,transparent,#000 45%,transparent);mask-image:linear-gradient(180deg,transparent,#000 45%,transparent)}
+
+/* pull quote */
+.pull{position:relative;margin:44px 0;padding:30px 6px;text-align:center;font-family:var(--mincho);font-size:18.5px;font-weight:700;line-height:1.95;letter-spacing:.02em;color:var(--gold-hi);border-top:1px solid rgba(212,175,55,.5);border-bottom:1px solid rgba(212,175,55,.5);background:radial-gradient(ellipse 80% 90% at 50% 50%,rgba(212,175,55,.08),transparent 75%)}
+
+/* framed figure */
+.fig{position:relative;border:1px solid rgba(212,175,55,.55);padding:10px;background:rgba(243,230,196,.03);margin:40px 0 0}
+.fig::before{content:"";position:absolute;inset:4px;border:1px solid rgba(212,175,55,.22);pointer-events:none}
+.fc{position:absolute;width:14px;height:14px;pointer-events:none}
+.fc.tl{top:-1px;left:-1px;border-top:2px solid var(--gold);border-left:2px solid var(--gold)}
+.fc.tr{top:-1px;right:-1px;border-top:2px solid var(--gold);border-right:2px solid var(--gold)}
+.fc.bl{bottom:-1px;left:-1px;border-bottom:2px solid var(--gold);border-left:2px solid var(--gold)}
+.fc.br{bottom:-1px;right:-1px;border-bottom:2px solid var(--gold);border-right:2px solid var(--gold)}
+.fig img{width:100%}
+.fig-cap{font-family:var(--sans);font-size:12px;letter-spacing:.1em;color:var(--dim);text-align:center;padding:14px 6px 6px;line-height:1.9}
+
+/* full-bleed photo with overlay */
+.ph-full{margin:48px -24px;position:relative;overflow:hidden}
+.ph-full img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:62% center}
+.ph-full::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--navy),transparent 26%,transparent 55%,rgba(13,17,32,.9) 85%,var(--navy));pointer-events:none}
+.ph-full .ov{position:absolute;left:0;right:0;bottom:34px;z-index:1;text-align:center;padding:0 24px;font-family:var(--mincho);font-size:22px;font-weight:700;line-height:1.9;color:#fbf2da;text-shadow:0 3px 18px rgba(0,0,0,.95)}
+.ph-full .ph-cap{position:absolute;right:12px;top:12px;z-index:1;font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;color:rgba(255,255,255,.75)}
+
+/* list of signs */
+.fit{list-style:none;margin:10px 0 0;padding:0}
+.fit li{position:relative;padding:18px 4px 18px 40px;border-bottom:1px solid rgba(212,175,55,.18)}
+.fit li:first-child{border-top:1px solid rgba(212,175,55,.38)}
+.fit li b{display:block;font-family:var(--mincho);font-size:17.5px;color:var(--gold-hi);font-weight:700;margin-bottom:4px;line-height:1.8}
+.fit li span{display:block;font-size:15px;color:var(--dim);line-height:1.95}
+.fit li::before{content:attr(data-n);position:absolute;left:2px;top:17px;font-family:var(--latin);font-size:20px;color:var(--gold)}
+
+/* steps */
+.steps{list-style:none;margin:8px 0 0;padding:0}
+.steps li{position:relative;padding:0 0 30px 62px}
+.steps li::before{content:attr(data-n);position:absolute;left:0;top:0;width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--latin);font-size:18px;color:var(--gold-hi);background:rgba(212,175,55,.07)}
+.steps li::after{content:"";position:absolute;left:21px;top:48px;bottom:6px;width:1px;background:rgba(212,175,55,.28)}
+.steps li:last-child{padding-bottom:4px}
+.steps li:last-child::after{display:none}
+.s-t{display:block;color:var(--sand);font-family:var(--mincho);font-size:18px;font-weight:700;line-height:1.7;padding-top:6px}
+.s-d{display:block;font-size:14.5px;color:var(--dim);line-height:1.95;margin-top:2px}
+
+/* gold box */
+.gbox{position:relative;border:1px solid rgba(212,175,55,.6);padding:12px;margin:40px 0 0}
+.gbox-in{border:1px solid rgba(212,175,55,.25);padding:30px 22px;background:radial-gradient(ellipse 85% 70% at 50% 0%,rgba(212,175,55,.1),transparent 65%)}
+.gbox h3{margin:0 0 18px;text-align:center;font-size:18px;color:var(--gold-hi);letter-spacing:.14em;line-height:1.8}
+.reasons{list-style:none;margin:0;padding:0}
+.reasons li{position:relative;padding:14px 0 14px 30px;border-top:1px solid rgba(212,175,55,.18);font-size:15.5px;line-height:2}
+.reasons li:first-child{border-top:0;padding-top:4px}
+.reasons li::before{content:"";position:absolute;left:4px;top:26px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.reasons li:first-child::before{top:16px}
+
+/* paper */
+.paper{position:relative;color:var(--paper-ink);padding:84px 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .28 0 0 0 0 .22 0 0 0 0 .12 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse 120% 90% at 50% 0%,#f8f1e0,var(--paper) 60%)}
+.paper::before,.paper::after{content:"";position:absolute;left:0;right:0;height:10px;pointer-events:none;background:linear-gradient(180deg,rgba(9,11,18,.3),transparent)}
+.paper::before{top:0}.paper::after{bottom:0;transform:scaleY(-1)}
+.paper .kicker{color:#8f6f2e}
+.paper h2{color:#4a3a1a}
+.paper .orn::before{background:linear-gradient(90deg,transparent,rgba(143,111,46,.6))}
+.paper .orn::after{background:linear-gradient(90deg,rgba(143,111,46,.6),transparent)}
+.paper .orn i{background:#8f6f2e;box-shadow:none}
+.paper strong{color:#4a3a1a}
+.paper em{color:#8a6420}
+.scene{margin:34px 0;padding:28px 24px;background:rgba(255,255,255,.55);border-top:1px solid rgba(143,111,46,.45);border-bottom:1px solid rgba(143,111,46,.45);font-size:16.5px;line-height:2.2}
+.scene p{margin-bottom:.9em}
+
+/* spec */
+.spec{width:100%;border-collapse:collapse;font-size:15px;margin:36px 0 0}
+.spec th,.spec td{text-align:left;padding:14px 6px;vertical-align:top;border-bottom:1px solid rgba(212,175,55,.22);line-height:1.9}
+.spec tr:first-child th,.spec tr:first-child td{border-top:1px solid rgba(212,175,55,.42)}
+.spec th{font-family:var(--sans);font-weight:600;font-size:12.5px;letter-spacing:.14em;color:var(--gold);white-space:nowrap;width:6.6em;padding-top:16px}
+.note-s{font-size:13.5px;color:var(--dim);margin-top:24px;line-height:2}
+
+/* price */
+.price-stage{position:relative;text-align:center;border:1px solid rgba(212,175,55,.6);padding:12px;margin:10px 0 36px}
+.price-stage .fc{width:18px;height:18px}
+.price-in{position:relative;overflow:hidden;border:1px solid rgba(212,175,55,.3);padding:40px 16px 38px;background:radial-gradient(ellipse 85% 70% at 50% 0%,rgba(212,175,55,.16),transparent 65%),var(--night)}
+.price-in::after{content:"";position:absolute;top:0;bottom:0;left:-80%;width:50%;background:linear-gradient(105deg,transparent,rgba(243,230,196,.08) 50%,transparent);transform:skewX(-16deg);animation:sheen 6.5s ease-in-out 3s infinite}
+.price-label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-indent:.24em;color:var(--gold);margin-bottom:12px}
+.price-name{font-family:var(--mincho);font-size:21px;font-weight:700;letter-spacing:.14em;color:var(--sand);margin-bottom:6px}
+.price-now{font-family:var(--latin);font-size:60px;font-weight:600;line-height:1.15;letter-spacing:.02em;color:var(--gold-hi)}
+@supports (-webkit-background-clip:text){.price-now{background:linear-gradient(175deg,#f9eec8 20%,#ddbb72 55%,#f3e0a6 80%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 22px rgba(212,175,55,.35))}}
+.price-now .yen{font-size:32px;vertical-align:8px;margin-right:4px}
+.price-now .tax{font-family:var(--mincho);font-size:16px;margin-left:4px}
+.price-ship{font-family:var(--sans);font-size:13px;letter-spacing:.08em;color:var(--body);margin-top:8px;line-height:1.9}
+.price-ship b{color:var(--gold-hi);font-weight:700}
+.price-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.04em}
+.price-badges span{white-space:nowrap;padding:6px 12px;border:1px solid rgba(212,175,55,.6);color:var(--sand)}
+.price-badges span.fill{background:var(--foil);color:#1d1507;border-color:transparent}
+
+/* countdown */
+.cd{margin:0 0 30px;text-align:center;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.04);padding:20px 12px 18px}
+.cd-l{font-family:var(--sans);font-size:12.5px;letter-spacing:.16em;color:var(--dim);margin-bottom:8px}
+.cd-t{display:flex;justify-content:center;align-items:flex-end;gap:6px;font-family:var(--latin);color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.cd-t .n{font-size:38px;font-weight:600;line-height:1}
+.cd-t .u{font-family:var(--sans);font-size:12px;color:var(--dim);margin:0 6px 4px 2px}
+
+/* CTA */
+.cta{display:block;position:relative;overflow:hidden;max-width:460px;margin:30px auto 0;padding:21px 12px 18px;text-align:center;text-decoration:none;font-family:var(--sans);font-weight:700;font-size:17.5px;letter-spacing:.16em;text-indent:.16em;color:#221808;background:linear-gradient(100deg,#ad8a43 0%,#f1dc9e 48%,#bf9c56 100%);border-radius:2px;box-shadow:0 10px 40px rgba(212,175,55,.3);animation:breath 3.4s ease-in-out infinite}
+.cta::after{content:"";position:absolute;top:-40%;bottom:-40%;left:-70%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.7) 50%,transparent);transform:skewX(-18deg);animation:sheen 4.6s ease-in-out 1.6s infinite}
+.cta small{display:block;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-indent:.14em;margin-top:4px;color:#5d491c}
+.cta:focus-visible{outline:3px solid var(--gold-hi);outline-offset:3px}
+@keyframes breath{0%,100%{box-shadow:0 10px 36px rgba(212,175,55,.26)}50%{box-shadow:0 10px 52px rgba(212,175,55,.5)}}
+.wait{max-width:460px;margin:30px auto 0;text-align:center;border:1px solid rgba(212,175,55,.6);padding:18px 12px;font-family:var(--mincho);font-weight:700;font-size:17px;line-height:1.9;color:var(--gold-hi);background:rgba(212,175,55,.06)}
+.wait small{display:block;font-family:var(--sans);font-weight:400;font-size:12px;color:var(--dim);letter-spacing:.08em}
+.cta-under{font-family:var(--sans);font-size:12px;letter-spacing:.1em;color:var(--dim);margin-top:14px;text-align:center}
+
+/* FAQ */
+details{border-bottom:1px solid rgba(212,175,55,.22)}
+details:first-of-type{border-top:1px solid rgba(212,175,55,.42)}
+summary{cursor:pointer;list-style:none;padding:20px 40px 20px 34px;position:relative;color:var(--sand);font-size:16px;line-height:1.85}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q";position:absolute;left:4px;top:19px;font-family:var(--latin);font-size:19px;color:var(--gold)}
+summary::after{content:"";position:absolute;right:10px;top:50%;width:9px;height:9px;margin-top:-7px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg);transition:transform .35s}
+details[open] summary::after{transform:rotate(225deg);margin-top:-2px}
+.faq-a{padding:0 6px 24px 34px;font-size:15px;color:var(--body);line-height:2}
+.faq-a p{margin-bottom:1em}
+
+/* last */
+.final{text-align:center;background:radial-gradient(ellipse 100% 50% at 50% 100%,rgba(212,175,55,.16),transparent 70%),var(--night);padding-bottom:100px}
+.portrait{max-width:250px;margin:6px auto 36px;position:relative;border:1px solid rgba(212,175,55,.55);padding:8px}
+.portrait img{aspect-ratio:3/4;object-fit:cover;object-position:center 22%}
+.portrait .fc{width:12px;height:12px}
+.final .lead{text-align:left}
+.sig{font-family:var(--mincho);font-size:21px;letter-spacing:.36em;color:var(--sand);margin-top:28px;text-align:right}
+.peak{text-align:center;margin:56px auto 0;font-family:var(--mincho)}
+.peak .l1{font-size:15px;color:var(--dim);letter-spacing:.12em;margin-bottom:12px}
+.peak .l2{font-size:34px;font-weight:800;line-height:1.5;color:var(--sand)}
+.peak .l2 em{background:linear-gradient(175deg,#fbf0c9 15%,#ddb862 55%,#f4dfa0 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.legal{font-family:var(--sans);font-size:12px;color:var(--dim);line-height:2;margin-top:34px;text-align:left}
+
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(9,11,18,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid rgba(212,175,55,.4);transform:translateY(110%);transition:transform .55s cubic-bezier(.3,.6,.3,1)}
+.sticky.show{transform:none}
+.sticky a,.sticky span{display:block;max-width:560px;margin:0 auto;padding:14px 8px;text-align:center;text-decoration:none;border-radius:2px;font-family:var(--sans);font-weight:700;font-size:14.5px;letter-spacing:.06em;white-space:nowrap}
+.sticky a{color:#221808;background:var(--foil)}
+.sticky span{color:var(--gold-hi);border:1px solid rgba(212,175,55,.55);background:rgba(212,175,55,.06);font-size:13.5px}
+
+footer{background:#06070c;padding:40px 20px 120px;font-family:var(--sans);font-size:12px;line-height:2.2;color:#8a8170;text-align:center;letter-spacing:.06em}
+footer a{color:#b3a68a;text-decoration:none}
+
+@media(min-width:700px){
+  body{font-size:17px}
+  h2{font-size:29px}
+  .hero-kicker{font-size:13px;letter-spacing:.3em;text-indent:.3em}
+  .hero-title{font-size:52px}
+  .hero-sub{font-size:18px}
+  .pull{font-size:24px}
+  .price-now{font-size:72px}
+  .ph-full{margin:56px 0}
+  .ph-full img{aspect-ratio:16/10;object-position:center}
+}
+@media(min-width:960px){
+  .hero{flex-direction:row;align-items:center}
+  .hero-img{left:auto;right:6%;width:min(50%,56svh);background-size:cover;background-position:center bottom;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 18%,#000 82%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0%,#000 18%,#000 82%,transparent 100%)}
+  .hero-veil{background:linear-gradient(180deg,rgba(0,0,0,0) 70%,var(--night) 100%)}
+  .hero-inner{width:50%;padding:0 4% 40px 6%}
+  .hero-foot{position:absolute;left:0;right:0;bottom:0}
+}
+@media(max-width:360px){.hero-title{font-size:33px}.hero-kicker{font-size:10px;letter-spacing:.12em}.price-now{font-size:50px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.js .rv>*{opacity:1;transform:none;transition:none}*{animation:none!important}#dust{display:none}}
 </style>
 </head>
 <body>
-<main>
 
-<section class="hero">
-<p class="eyebrow">2027 CITRINE</p>
-<h1>足りないんじゃない。<br>握ったまま、<br>自分の分を後回しにしてきただけ。</h1>
-<p class="lead">2027年は、あなたの番です。</p>
-<small>シトリン鑑定にご応募くださった方へ、みづきからのご案内です。</small>
-</section>
-
-<section>
-<h2>手を、握ったままではありませんか</h2>
-<p>我慢をするとき、人は手を握ります。言いたいことを飲み込んだとき。泣きそうなのをこらえたとき。家族のために、自分の欲しいものをあきらめたとき。</p>
-<ul class="signs">
-<li>ほめられると、つい打ち消してしまう</li>
-<li>人からの申し出を、まず一度は断ってしまう</li>
-<li>家族の物は迷わず買えるのに、自分の物はいつも最後</li>
-<li>いいことが続くと、先に身構えてしまう</li>
-<li>朝起きたとき、手や肩がこわばっている</li>
-</ul>
-<p>握ったままの手には、何も乗りません。2024年にも、2025年にも、届いていたものがあったはずです。それが通り過ぎていったのは、運がなかったからではなく、手が握ったままだったからです。</p>
-<p>握ってきたのは、弱かったからではありません。守るものがあったからです。いちばん優しい人が、いちばん長く握っています。</p>
-</section>
-
-<section>
-<h2>ひらいた手は、また握ります</h2>
-<p>眠る前に手をひらいてくださった方から、たくさんのお返事をいただきました。でも、何十年も握ってきた手は、その形を覚えています。何も乗っていない手は、すぐにもとの形に戻ろうとします。</p>
-<p>だから、ひらいた手には、乗せるものが要ります。受け取る、という形を、手に覚えてもらうためです。</p>
-<p>2万人以上の方を視てきた私でも、手のひらに置くものをお勧めしたことは、数えるほどしかありません。ひらくのは、あなた自身だからです。それでも今回お勧めするのは、ひらいた手がまたすぐに握ってしまう方を、たくさん視てきたからです。だから私は、売る前に視ます。手を視させていただいた方にだけ、お渡ししています。</p>
-</section>
-
-<section>
-<h2>実りを受け取る石、シトリン</h2>
-<img src="buy/img/main.jpg" alt="天然のシトリン">
-<p class="cap">天然のシトリン。色・形は一つずつ違います。</p>
-<p>黄色い、水晶の仲間の石です。昔から「実りを受け取る石」と言われてきました。人とのご縁も、ふとした機会も、後回しにしてきたものが戻ってくることも。届いたものを手のひらで受け取る石として、大切にされてきました。</p>
-<p>天然のシトリンは、一つとして同じ色がありません。あなたに届く一つは、世界に一つの色です。</p>
-</section>
-
-<section>
-<h2>8月にルチルを迎えてくださった方へ</h2>
-<p>ルチルは、止まっていたものを通す石でした。8月に迎えてくださった方は、もう最初の一歩を終えています。あのときの選択は、正しかったんです。</p>
-<p>シトリンは、通ったものを受け取る石です。役割が違うので、並べて置けます。迎えてくださるなら、ルチルの隣に置いてください。</p>
-<div class="box"><p>ルチルで十分だと感じるなら、それが正しい答えです。足す必要はありません。</p></div>
-</section>
-
-<section>
-<h2>使い方は、一つだけ</h2>
-<p>朝、起きたら手のひらに乗せる。一度ぎゅっと握って、それから、ゆっくりひらく。そして、鑑定でお伝えした「ひらく場所」に戻す。</p>
-<p>毎朝、手のひらに受け取る形を思い出してから一日を始める。2027年の365日を、その手で過ごしていただくための石です。</p>
-<img src="buy/img/dark.jpg" alt="シトリン">
-</section>
-
-<section>
-<h2>正直に、お伝えします</h2>
-<p>石を置けば何かが起きると、私は約束できません。ひらくのは、あなたです。シトリンは、ひらいた手がまた握ってしまわないための、手のひらの印です。</p>
-<p>年を越す前に手のひらに置いて、馴染ませる時間を残しておきたくて、受付は11月30日(月)の0時で締めます。</p>
-</section>
-
-<section id="price">
-<h2>お値段とお届け</h2>
-<p class="price">79,800円<span style="font-size:16px">（税込）</span></p>
-<table>
-<tr><th>送料</th><td>1,000円（お支払い総額 80,800円）</td></tr>
-<tr><th>受付期間</th><td>11月26日(木)夜8時 〜 11月30日(月)0時</td></tr>
-<tr><th>大きさ</th><td>手のひらで包める大きさ（天然石のため一つずつ異なります）</td></tr>
-<tr><th>お届け</th><td>中身の分からない無地の箱でお送りします。届く時期は商品ページをご確認ください。</td></tr>
-<tr><th>お支払い</th><td>STORESの決済ページで行います。</td></tr>
-<tr><th>お申し込み</th><td>シトリン鑑定にご応募くださった方へのご案内です。</td></tr>
-</table>
-<div class="box">
-<p>生活費を削ってまで、迎えないでください。<br>ご家族と相談してからで、大丈夫です。</p>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-img" role="img" aria-label="暗闇の中で黄金色に光るシトリン"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <div class="hero-kicker">鑑定で選ばれた、あなたへのご案内</div>
+    <p class="hero-en">BRAZILIAN CITRINE · 2027</p>
+    <h1 class="hero-title"><span class="gg">実りの</span><br><span class="gg">シトリン</span></h1>
+    <p class="hero-sub">2027年は、あなたの番です。</p>
+    <div><span class="hero-limit">受付 11/26(木)20:00 〜 11/30(月)0:00</span></div>
+  </div>
+  <div class="hero-foot">
+    <p class="hero-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</p>
+    <div class="scroll-cue" aria-hidden="true"></div>
+  </div>
 </div>
-<div id="before" class="wait">お迎えの受付は<br>11月26日(木)夜8時からです</div>
-<a id="buy" class="btn" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f" hidden>シトリンを迎える<small>STORESの決済ページへ進みます</small></a>
-<div id="after" class="wait" hidden>お迎えの受付は終了しました</div>
+
+<!-- TO YOU -->
+<section class="sec-a">
+  <div class="wrap rv">
+    <span class="kicker">TO YOU</span>
+    <h2>鑑定で選ばれた、<br>あなたへ</h2>
+    <div class="orn"><i></i></div>
+    <p>みづきです。</p>
+    <p>このページは、シトリン鑑定にご応募くださり、<strong>鑑定で選ばれた方にだけ</strong>お送りしている、お迎えのご案内です。</p>
+    <p>11月25日の夜にお返しした、あなたの耕し方と、最初に数えるもの。あの結果を思い出しながら、読み進めてください。</p>
+    <p>お代のことも、届くまでのことも、すべてこの1枚に書きました。ゆっくりで大丈夫です。</p>
+  </div>
 </section>
 
-<section>
-<h2>よくあるご質問</h2>
-<dl class="qa">
-<dt>Q. 効果はありますか。</dt>
-<dd>A. 毎朝手のひらに乗せて、受け取る形を思い出すための天然石です。効果効能をお約束するものではありません。</dd>
-<dt>Q. ルチルと一緒に置いてもいいですか。</dt>
-<dd>A. はい。役割が違うので、並べて置いていただけます。</dd>
-<dt>Q. 家族に知られずに受け取れますか。</dt>
-<dd>A. 中身の分からない無地の箱でお送りします。</dd>
-<dt>Q. 注文できたか分かりません。</dt>
-<dd>A. STORESから注文確認メールが届いていれば受付済みです。届かない場合は、ご注文番号とお名前をLINEでお知らせください。カード番号や確認コードは送らないでください。</dd>
-</dl>
+<div class="band" aria-hidden="true"></div>
+
+<!-- THE ROOT -->
+<section class="sec-b">
+  <div class="wrap rv">
+    <span class="kicker">THE ROOT</span>
+    <h2>足りないんじゃない。<br>摘み忘れているだけ。</h2>
+    <div class="orn"><i></i></div>
+    <p>運には、季節があります。種をまく季節。耕す季節。そして、実ったものを摘む季節。</p>
+    <p>あなたがこれまで続けてきたこと。我慢したこと。人のために動いたこと。それは、消えていません。<strong>消えずに、実になっています。</strong></p>
+    <p>ただ、摘む季節に入っているのに、摘み方を知らない人は、まだ耕し続けてしまいます。トマトがもう赤くなっているのに、目に入らないまま、隣の土をまた掘り返している。私はこれを<em>「摘み忘れ」</em>と呼んでいます。</p>
+    <p>2024年にも、2025年にも、あなたの畑には実っていたものがあったはずです。人からの「助かった」のひとこと。休んでいい日。頼っていい相手。それが残らなかったのは、実らなかったからではなく、摘む前に次の種をまいたからです。</p>
+    <div class="pull"><span class="nw">あなたは、足りないんじゃない。</span><br><span class="nw">もう実っているのに、</span><br><span class="nw">摘まずに、耕し続けてきただけ。</span></div>
+    <p class="center" style="font-size:15px;color:var(--dim);margin-bottom:8px">2万人以上を視てきて分かった、<br>摘み忘れの人の3つの共通点</p>
+    <ul class="fit">
+      <li data-n="01"><b>人のことは覚えているのに、自分のことだけ後回しにする</b><span>家族の予定も、親の病院の日も覚えている。でも、自分の通院は半年先に延ばしたまま。</span></li>
+      <li data-n="02"><b>受け取る前に、返す</b><span>ほめられると「いえ、まだまだです」と先に言う。「助かった」と言われた夜も、数えるのはやり残したことのほう。</span></li>
+      <li data-n="03"><b>止まると、落ち着かない</b><span>休みの日に休むと、何か忘れている気がして、結局家のことを始めてしまう。</span></li>
+    </ul>
+    <p style="margin-top:36px">耕し続けてきたのは、欲張りだからでも、心配性だからでもありません。<strong>守るものがあったからです。</strong>足りなかったのは、「もう摘んでいい」と教えてくれる人だけでした。</p>
+  </div>
 </section>
 
-<section>
-<p>2027年は、頑張った人に配られる年ではなく、手がひらいている人に配られる年だと、私は感じています。そして、順番がずっと後ろだった人に。</p>
-<p>握ったままで、年を越さないでください。</p>
-<p>不安なまま、一人にしないからね。</p>
-<p class="sig">みづき</p>
-<small>天然石のため、色味・模様・大きさに個性があります。効果効能をお約束するものではありません。医療行為ではありません。発送・返品・交換については、STORESの商品ページと特定商取引法に基づく表記をご確認ください。</small>
+<!-- WHY EVERY MORNING -->
+<section class="sec-a">
+  <div class="wrap rv">
+    <span class="kicker">WHY EVERY MORNING</span>
+    <h2>占いは1回。<br>根本は、毎日。</h2>
+    <div class="orn"><i></i></div>
+    <p>占いを受けた夜は軽くなるのに、数日で元に戻る。覚えがあると思います。</p>
+    <p>戻るのは、あなたが悪いからではありません。根本が、手の動きに残っているからです。何年も耕してきた手は、摘んだ夜の次の朝、もとの動きに戻ろうとします。</p>
+    <p>占いも、数える夜も、1回です。でも手は、毎日動きます。だから根本に届かせるには、<em>毎朝ふれて、「今は摘む季節だ」と手に覚えてもらう印</em>が要ります。</p>
+    <p>私は2万人以上の方を視てきましたが、手のひらに置くものを人にお勧めしたことは、数えるほどしかありません。ものに頼ってほしくないからです。それでも今回お勧めするのは、毎日のものには、毎日ふれるものでしか届かないからです。</p>
+    <p>同じ仕事の方には「それは言わないほうがいい」と止められました。今回は、黙らないと決めました。</p>
+  </div>
 </section>
 
-</main>
-<div class="bar"><span id="barwait">受付は11月26日(木)夜8時から</span><a id="barbuy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f" hidden>シトリンを迎える</a></div>
+<div class="band" aria-hidden="true"></div>
+
+<!-- FROM BRAZIL / THE STONE -->
+<section class="sec-b">
+  <div class="wrap rv">
+    <span class="kicker">FROM BRAZIL</span>
+    <h2>ブラジルで出会った、<br>黄金の実り</h2>
+    <div class="orn"><i></i></div>
+    <p>ブラジルは、いま、春から夏へ向かっています。日本が冬に向かうこの季節に、地球の裏側では、これから実る方へ季節が進んでいます。</p>
+    <div class="ph-full">
+      <img src="img/brazil_church.jpg" alt="夕日に照らされたブラジルの聖堂の風景（イメージ）" width="923" height="494">
+      <span class="ph-cap">イメージ</span>
+      <div class="ov">実った穂と、<br>同じ色をした石。</div>
+    </div>
+    <p>そこで出会ったのが、この石です。</p>
+    <h2 style="margin-top:40px">シトリン</h2>
+    <p>黄色い、水晶の仲間の石です。昔から、<strong>実りを受け取る石</strong>と言われてきました。人とのご縁も、ふとした機会も、続けてきたことが形になることも。実ったものを、手のひらで受け取る石として大切にされてきました。</p>
+    <figure class="fig" style="margin-left:0;margin-right:0">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <img src="img/citrine_sphere.jpg" alt="黄金色に澄んだ天然シトリン" width="1200" height="1112">
+      <figcaption class="fig-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</figcaption>
+    </figure>
+    <p style="margin-top:40px">天然のシトリンは、1つとして同じ色がありません。<em>あなたの手に届く1つは、世界に1つだけの色です。</em>天然のものを1つずつ選んだ分なので、数には限りがあります。</p>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="sec-a">
+  <div class="wrap rv">
+    <span class="kicker">HOW TO USE</span>
+    <h2>使い方は1つ。<br>置く場所も1つ、<br>玄関です。</h2>
+    <div class="orn"><i></i></div>
+    <ol class="steps">
+      <li data-n="01"><span class="s-t">朝、出かける前に、玄関で手のひらに乗せる</span></li>
+      <li data-n="02"><span class="s-t">昨日あなたがしたことを、1つ数える</span><span class="s-d">小さくていいです。心の中で大丈夫です。</span></li>
+      <li data-n="03"><span class="s-t">戻して、出る</span><span class="s-d">それだけです。</span></li>
+    </ol>
+    <div class="gbox">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <div class="gbox-in">
+        <h3>なぜ、玄関なのか</h3>
+        <p style="font-size:14px;color:var(--dim);text-align:center;margin-bottom:16px">2万人以上を視てきて、<br>私はこう考えています。</p>
+        <ul class="reasons">
+          <li>玄関は、あなたが耕しに出ていく場所です。<strong>その直前に1つ摘むと</strong>、1日の順番が「耕してから摘む」ではなく「摘んでから耕す」に変わります。</li>
+          <li><strong>必ず通る場所です。</strong>出かけない日も、朝、玄関まで行って、乗せて、数えてください。</li>
+          <li>帰ってきたとき、<strong>最初に目に入る場所です。</strong>今日の実りを外に落とさずに、家に持ち帰れます。</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:36px">2027年の365日を、その順番で過ごしていただきたいんです。</p>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true"></div>
+
+<!-- ALREADY -->
+<section class="sec-b">
+  <div class="wrap rv">
+    <span class="kicker">SIDE BY SIDE</span>
+    <h2>すでに、置いているものが<br>ある方へ</h2>
+    <div class="orn"><i></i></div>
+    <p>流れを整えるもの。清めるもの。守ってくれるもの。石でも、お守りでも、お札でも。これまでに何か1つでも手元に置いてきた方へ。</p>
+    <p>それは、正しかったんです。手放す必要はありません。</p>
+    <p>ただ、役割が違います。整えるもの、守るものは、畑を耕すのを助けてくれます。でも、いい畑ほど実が多く、実が多いほど、摘み忘れが起きます。摘んだことを数える印は、別に要るんです。</p>
+    <p><strong>迎えてくださるなら、いま置いているものの隣に置いてください。</strong></p>
+    <div class="pull" style="font-size:18px">いま手元にあるもので<br>じゅうぶんだと感じる方は、<br>それが正しい答えです。</div>
+  </div>
+</section>
+
+<!-- HONEST -->
+<section class="sec-a">
+  <div class="wrap rv">
+    <span class="kicker">HONESTLY</span>
+    <h2>正直に、お伝えします</h2>
+    <div class="orn"><i></i></div>
+    <p>石を置けば何かが起きると、私は約束できません。摘むのは、あなたです。</p>
+    <p>シトリンは、<em>摘む季節を手が忘れないための、手のひらの印</em>です。だから私は、売る前に視ます。あなたの畑を視ていないのに、お渡しすることはしません。鑑定で選ばれた方にだけ、このご案内をお送りしています。</p>
+    <h2 style="margin-top:56px;font-size:22px">どうして、この冬なのか</h2>
+    <p>年を越してから手のひらに置いても、その手は、もう2027年を耕すことから始めています。年を越す前に置いて、摘む動きを手に覚えてもらう時間が要るんです。</p>
+    <p>だから受付は、<strong>11月30日(月) 0:00</strong>で締めます。</p>
+  </div>
+</section>
+
+<!-- IMAGINE (paper) -->
+<div class="paper">
+  <div class="wrap rv">
+    <span class="kicker">IMAGINE 2027</span>
+    <h2>少しだけ、<br>想像してみてください</h2>
+    <div class="orn"><i></i></div>
+    <div class="scene">
+      <p>2027年の、ある朝です。</p>
+      <p>玄関で1つ数えてから、出ていく。職場で「助かった」と言われて、「ありがとう」と受け取る。親の病院の帰りに、半年延ばしていた自分の通院を予約する。日曜日に、休む。</p>
+      <p>若いころにあきらめていたことを、夜に少しだけ、自分の力でやってみる。</p>
+    </div>
+    <p>そして2027年の12月。1年をふり返るとき、数えているのは、できなかったことでしょうか。それとも、摘めたものでしょうか。</p>
+    <p>大きな出来事でなくていい。1年前より、少しだけ、<strong>数えられるものが増えている。</strong>そういう年末を、迎えていただきたいんです。</p>
+    <p>そして、あなたが先に摘むと、それを見ている大切な人も、摘んでいいと知ります。あなたが受け取ることは、わがままではなく、その人へのいちばん静かな贈り物です。</p>
+  </div>
+</div>
+
+<!-- PRICE -->
+<section class="sec-b" id="price">
+  <div class="wrap rv">
+    <span class="kicker">PRICE</span>
+    <h2>お代と、お届け</h2>
+    <div class="orn"><i></i></div>
+    <div class="price-stage">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <div class="price-in">
+        <div class="price-label">鑑定で選ばれた方へのご案内</div>
+        <div class="price-name">実りのシトリン</div>
+        <div class="price-now"><span class="yen">¥</span>79,800<span class="tax">（税込）</span></div>
+        <div class="price-ship">送料 1,000円 ／ お支払い総額 <b>80,800円</b></div>
+        <div class="price-badges"><span class="fill">受付 11/26(木)20:00〜11/30(月)0:00</span><span>数に限りあり</span></div>
+      </div>
+    </div>
+    <div class="cd" id="cd" hidden>
+      <div class="cd-l" id="cdl">受付締切まで</div>
+      <div class="cd-t"><span class="n" id="cdd">0</span><span class="u">日</span><span class="n" id="cdh">00</span><span class="u">時間</span><span class="n" id="cdm">00</span><span class="u">分</span></div>
+    </div>
+    <table class="spec">
+      <tr><th>商品名</th><td>実りのシトリン（天然シトリン）</td></tr>
+      <tr><th>お代</th><td>79,800円（税込）</td></tr>
+      <tr><th>送料</th><td>1,000円（お支払い総額 80,800円）</td></tr>
+      <tr><th>受付期間</th><td>11月26日(木) 20:00 〜 11月30日(月) 0:00</td></tr>
+      <tr><th>大きさ</th><td>手のひらで包める大きさ（天然石のため1つずつ異なります）</td></tr>
+      <tr><th>お届け</th><td>中身の分からない無地の箱でお送りします。届く時期は商品ページをご確認ください。</td></tr>
+      <tr><th>お支払い</th><td>STORESの決済ページで行います。</td></tr>
+      <tr><th>ご案内先</th><td>シトリン鑑定にご応募くださり、鑑定で選ばれた方</td></tr>
+    </table>
+
+    <h2 style="margin-top:64px;font-size:22px">お迎えの流れ</h2>
+    <ol class="steps" style="margin-top:24px">
+      <li data-n="01"><span class="s-t">下のボタンからSTORESへ</span><span class="s-d">受付期間中だけ、ボタンが表示されます。</span></li>
+      <li data-n="02"><span class="s-t">ご注文とお支払い</span><span class="s-d">STORESの決済ページで手続きをしてください。</span></li>
+      <li data-n="03"><span class="s-t">注文確認メールが届けば、受付完了</span><span class="s-d">STORESから届くメールをご確認ください。</span></li>
+    </ol>
+
+    <div class="wait js-before">お迎えの受付は<br>11月26日(木) 20:00からです<small>時間になると、この場所にボタンが現れます</small></div>
+    <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f" hidden>シトリンを迎える<small>STORESの決済ページへ進みます</small></a>
+    <div class="wait js-after" hidden>お迎えの受付は終了しました<small>ありがとうございました</small></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-a" id="faq">
+  <div class="wrap rv">
+    <span class="kicker">Q &amp; A</span>
+    <h2>よくあるご質問</h2>
+    <div class="orn"><i></i></div>
+    <div>
+      <details><summary>効果はありますか。</summary><div class="faq-a"><p>毎朝玄関で手のひらに乗せて、昨日の実りを1つ数えるための天然石です。効果効能をお約束するものではありません。</p></div></details>
+      <details><summary>すでに石やお守りを置いていても、迎えていいですか。</summary><div class="faq-a"><p>はい。役割が違うので、いま置いているものの隣に置いていただけます。いま手元にあるものでじゅうぶんだと感じる方は、足す必要はありません。</p></div></details>
+      <details><summary>色や形は、写真と同じですか。</summary><div class="faq-a"><p>天然石のため、色味・模様・大きさは1つ1つ異なります。写真はイメージです。</p></div></details>
+      <details><summary>家族に知られずに受け取れますか。</summary><div class="faq-a"><p>中身の分からない無地の箱でお送りします。</p></div></details>
+      <details><summary>注文できたか分かりません。</summary><div class="faq-a"><p>STORESから注文確認メールが届いていれば受付済みです。届かない場合は、ご注文番号とお名前をLINEでお知らせください。カード番号や確認コードは送らないでください。</p></div></details>
+      <details><summary>届く時期や、返品・交換について知りたいです。</summary><div class="faq-a"><p>STORESの商品ページと、特定商取引法に基づく表記をご確認ください。</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- LAST -->
+<section class="final">
+  <div class="wrap rv">
+    <span class="kicker">FROM MIZUKI</span>
+    <h2>最後に</h2>
+    <div class="orn"><i></i></div>
+    <div class="portrait"><span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span><img src="img/mizuki.jpg" alt="みづき" width="720" height="960"></div>
+    <div class="lead">
+      <p>2027年は、頑張った人に配られる年ではなく、摘む季節だと気づいた人に配られる年だと、私は感じています。</p>
+      <p>誰かのために耕す年ではなく、自分の力で、1つ成し遂げる年に。若いころにあきらめていたことを、取り戻す年に。</p>
+      <p>ずっと順番が後ろだったあなたへ。<strong>2027年は、あなたの番です。</strong></p>
+      <p>不安なまま、ひとりにしないからね。</p>
+    </div>
+    <p class="sig">みづき</p>
+    <div class="peak">
+      <div class="l1">実ったものを、数える1年へ。</div>
+      <div class="l2">摘みに、<br><em>いきましょう。</em></div>
+    </div>
+    <div class="wait js-before">お迎えの受付は<br>11月26日(木) 20:00からです</div>
+    <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f" hidden>シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
+    <div class="wait js-after" hidden>お迎えの受付は終了しました</div>
+    <p class="cta-under">受付は11月30日(月) 0:00まで</p>
+    <p class="legal">天然石のため、色味・模様・大きさに個性があります。効果効能をお約束するものではありません。医療行為ではありません。発送・返品・交換については、STORESの商品ページと特定商取引法に基づく表記をご確認ください。</p>
+  </div>
+</section>
+
+<footer>
+  <a href="https://pmsdqb4c2p0emj0yagvc.stores.jp/tokushoho">特定商取引法に基づく表記</a> ／
+  <a href="https://pmsdqb4c2p0emj0yagvc.stores.jp/privacy_policy">プライバシーポリシー</a><br>
+  © みづき
+</footer>
+
+<div class="sticky" id="sticky">
+  <span class="js-before">受付は11月26日(木) 20:00から</span>
+  <a class="js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f" hidden>¥79,800で迎える ＋送料¥1,000</a>
+  <span class="js-after" hidden>受付は終了しました</span>
+</div>
+
 <script>
+/* 受付時刻でボタンを切り替える（JST） ?preview=open で受付中表示を確認できる */
 (function(){
-  var open=new Date('2026-11-26T20:00:00+09:00').getTime(), close=new Date('2026-11-30T00:00:00+09:00').getTime(), now=Date.now();
+  var OPEN=Date.parse('2026-11-26T20:00:00+09:00'), CLOSE=Date.parse('2026-11-30T00:00:00+09:00');
   var q=location.search.indexOf('preview=open')>=0;
-  function s(id,show){var e=document.getElementById(id); if(e){ if(show){e.removeAttribute('hidden')}else{e.setAttribute('hidden','')} }}
-  var isOpen=q||(now>=open&&now<close), isAfter=!q&&now>=close;
-  s('before',!isOpen&&!isAfter); s('buy',isOpen); s('after',isAfter);
-  s('barwait',!isOpen); s('barbuy',isOpen);
-  if(isAfter){document.getElementById('barwait').textContent='受付は終了しました'}
+  function all(c){return document.querySelectorAll(c)}
+  function show(c,on){all(c).forEach(function(e){on?e.removeAttribute('hidden'):e.setAttribute('hidden','')})}
+  function pad(n){return (n<10?'0':'')+n}
+  var last='';
+  function apply(){
+    var now=Date.now(), st=q?'open':(now<OPEN?'before':(now>=CLOSE?'after':'open'));
+    if(st!==last){show('.js-before',st==='before');show('.js-buy',st==='open');show('.js-after',st==='after');last=st}
+    var cd=document.getElementById('cd'), target=st==='before'?OPEN:(st==='open'&&!q?CLOSE:0);
+    if(!target){cd.setAttribute('hidden','');return}
+    cd.removeAttribute('hidden');
+    document.getElementById('cdl').textContent=st==='before'?'お迎えの受付開始まで':'受付締切まで';
+    var s=Math.max(0,Math.floor((target-now)/1000));
+    document.getElementById('cdd').textContent=Math.floor(s/86400);
+    document.getElementById('cdh').textContent=pad(Math.floor(s%86400/3600));
+    document.getElementById('cdm').textContent=pad(Math.floor(s%3600/60));
+  }
+  apply(); setInterval(apply,15000);
+})();
+/* reveal */
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+/* sticky：ヒーローを過ぎたら表示 */
+(function(){
+  var b=document.getElementById('sticky'), h=document.querySelector('.hero');
+  function f(){b.classList.toggle('show',window.scrollY>h.offsetHeight*.7)}
+  addEventListener('scroll',f,{passive:true}); f();
+})();
+/* 金の粒 */
+(function(){
+  var c=document.getElementById('dust');
+  if(!c||!c.getContext||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var x=c.getContext('2d'),W,H,ps=[],run=false,raf=0,d=Math.min(devicePixelRatio||1,2);
+  function size(){var r=c.parentNode.getBoundingClientRect();W=r.width;H=r.height;c.width=W*d;c.height=H*d;c.style.width=W+'px';c.style.height=H+'px';x.setTransform(d,0,0,d,0,0)}
+  function mk(y){return{x:Math.random()*W,y:y?Math.random()*H:H+6,r:.6+Math.random()*1.7,vy:.12+Math.random()*.3,vx:(Math.random()-.5)*.14,t:Math.random()*6.28,ts:.008+Math.random()*.02,o:.25+Math.random()*.5}}
+  function init(){size();ps=[];for(var i=0;i<34;i++)ps.push(mk(true))}
+  function fr(){if(!run)return;x.clearRect(0,0,W,H);for(var i=0;i<ps.length;i++){var p=ps[i];p.y-=p.vy;p.x+=p.vx;p.t+=p.ts;if(p.y<-8)ps[i]=p=mk(false);var a=p.o*(.45+.55*Math.abs(Math.sin(p.t)));var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*3.2);g.addColorStop(0,'rgba(250,232,170,'+a+')');g.addColorStop(.45,'rgba(212,175,55,'+(a*.5)+')');g.addColorStop(1,'rgba(212,175,55,0)');x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r*3.2,0,6.283);x.fill()}raf=requestAnimationFrame(fr)}
+  init();addEventListener('resize',init);
+  new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!run){run=true;fr()}else if(!e.isIntersecting&&run){run=false;cancelAnimationFrame(raf)}})}).observe(c.parentNode);
 })();
 </script>
 </body>
