@@ -50,6 +50,7 @@ html.js .rv.on>*{opacity:1;transform:none}
 .hero-en{font-family:var(--latin);font-size:13px;letter-spacing:.5em;text-indent:.5em;color:var(--gold-soft);margin:0 0 6px;animation:fade 1.6s ease .5s both}
 .hero-title{font-size:38px;font-weight:700;letter-spacing:.18em;text-indent:.18em;line-height:1.5;color:#f8efd6;margin:0 0 16px;text-shadow:0 2px 30px rgba(0,0,0,.8);animation:title 2s cubic-bezier(.19,.7,.26,1) .55s both}
 .hero-title .gg{background:linear-gradient(175deg,#fbf0c9 15%,#e2bf6a 55%,#f6e3a5 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-lead{font-family:var(--mincho);font-size:14.5px;line-height:2.05;letter-spacing:.08em;color:var(--sand);margin:0 0 22px;text-shadow:0 2px 14px rgba(0,0,0,.9);animation:fade 1.6s ease 1.2s both}
 .hero-sub{font-family:var(--mincho);font-size:16px;font-weight:600;letter-spacing:.2em;text-indent:.2em;color:var(--gold-hi);margin:0 0 26px;text-shadow:0 2px 16px rgba(0,0,0,.9);animation:fade 1.6s ease 1.05s both}
 .hero-limit{display:inline-block;position:relative;overflow:hidden;font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.06em;text-indent:.06em;white-space:nowrap;color:#1d1507;background:var(--foil);padding:10px 22px;border-radius:2px;box-shadow:0 8px 30px rgba(0,0,0,.6);animation:fade 1.6s ease 1.35s both}
 .hero-limit::after{content:"";position:absolute;top:-40%;bottom:-40%;left:-70%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.75) 50%,transparent);transform:skewX(-18deg);animation:sheen 4.4s ease-in-out 2.4s infinite}
@@ -156,7 +157,7 @@ h2{font-size:25px;font-weight:700;letter-spacing:.1em;line-height:1.8;color:var(
 .price-in::after{content:"";position:absolute;top:0;bottom:0;left:-80%;width:50%;background:linear-gradient(105deg,transparent,rgba(243,230,196,.08) 50%,transparent);transform:skewX(-16deg);animation:sheen 6.5s ease-in-out 3s infinite}
 .price-label{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.24em;text-indent:.24em;color:var(--gold);margin-bottom:12px}
 .price-name{font-family:var(--mincho);font-size:21px;font-weight:700;letter-spacing:.14em;color:var(--sand);margin-bottom:6px}
-.price-now{font-family:var(--latin);font-size:60px;font-weight:600;line-height:1.15;letter-spacing:.02em;color:var(--gold-hi)}
+.price-now{font-family:var(--latin);font-size:54px;font-weight:600;line-height:1.15;letter-spacing:.02em;color:var(--gold-hi);white-space:nowrap}
 @supports (-webkit-background-clip:text){.price-now{background:linear-gradient(175deg,#f9eec8 20%,#ddbb72 55%,#f3e0a6 80%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 22px rgba(212,175,55,.35))}}
 .price-now .yen{font-size:32px;vertical-align:8px;margin-right:4px}
 .price-now .tax{font-family:var(--mincho);font-size:16px;margin-left:4px}
@@ -221,6 +222,90 @@ details[open] summary::after{transform:rotate(225deg);margin-top:-2px}
 footer{background:#06070c;padding:40px 20px 120px;font-family:var(--sans);font-size:12px;line-height:2.2;color:#8a8170;text-align:center;letter-spacing:.06em}
 footer a{color:#b3a68a;text-decoration:none}
 
+/* ===== v2 additions (diagrams A–K) ===== */
+.hero-plink{display:inline-block;margin-top:18px;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--gold-hi);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.65);padding-bottom:3px;animation:fade 1.6s ease 1.6s both}
+.hero-plink:active{opacity:.7}
+
+/* A: trio cards */
+.trio{display:grid;gap:12px;margin:40px 0 0}
+.trio .card{border:1px solid rgba(212,175,55,.45);background:rgba(243,230,196,.03);padding:20px 18px 18px;position:relative}
+.trio .tag{display:inline-block;font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.18em;color:#1d1507;background:var(--foil);padding:4px 12px;margin-bottom:12px}
+.trio .card p{font-size:15.5px;line-height:2;margin:0}
+
+/* B: cycle diagram */
+.cycle{margin:36px 0 0;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.03);padding:22px 14px 16px}
+.cycle svg{display:block;width:100%;height:auto}
+.cycle .cap{font-family:var(--sans);font-size:12px;letter-spacing:.08em;color:var(--dim);text-align:center;margin-top:10px;line-height:1.9}
+
+/* C: checklist */
+.check{list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.03);padding:8px 18px}
+.check li{position:relative;padding:16px 0 16px 40px;border-bottom:1px dashed rgba(212,175,55,.25)}
+.check li:last-child{border-bottom:0}
+.check li::before{content:"";position:absolute;left:2px;top:22px;width:17px;height:17px;border:1.5px solid var(--gold);border-radius:2px;background:rgba(212,175,55,.05)}
+.check li b{display:block;font-family:var(--mincho);font-size:16.5px;color:var(--gold-hi);font-weight:700;line-height:1.8}
+.check li span{display:block;font-size:14px;color:var(--dim);line-height:1.95}
+
+/* D: two flows */
+.flows{display:grid;gap:14px;margin:36px 0 8px}
+.flow{border:1px solid rgba(212,175,55,.3);padding:20px 16px 16px;background:rgba(243,230,196,.02)}
+.flow.good{border-color:rgba(212,175,55,.65);background:radial-gradient(ellipse 90% 60% at 50% 0%,rgba(212,175,55,.1),transparent 70%)}
+.flow h4{margin:0 0 14px;text-align:center;font-family:var(--mincho);font-size:15.5px;letter-spacing:.08em;color:var(--dim)}
+.flow.good h4{color:var(--gold-hi)}
+.flow .st{border:1px solid rgba(212,175,55,.3);background:var(--navy2);padding:10px 12px;text-align:center;font-size:14.5px;line-height:1.8;color:var(--body)}
+.flow.good .st{border-color:rgba(212,175,55,.5);color:var(--sand)}
+.flow .ar{text-align:center;color:var(--gold);font-size:15px;line-height:1.5;padding:3px 0}
+@media(min-width:640px){.flows{grid-template-columns:1fr 1fr}}
+
+/* E: comparison table */
+.cmp{width:100%;border-collapse:collapse;font-size:14px;margin:30px 0 0}
+.cmp th,.cmp td{padding:12px 8px;border-bottom:1px solid rgba(212,175,55,.22);text-align:left;line-height:1.8;vertical-align:top}
+.cmp thead th{font-family:var(--sans);font-size:11.5px;letter-spacing:.1em;color:var(--gold);border-bottom:1px solid rgba(212,175,55,.45)}
+.cmp tbody th{font-family:var(--mincho);font-weight:700;color:var(--sand);font-size:14.5px;width:32%}
+.cmp td{color:var(--dim)}
+.cmp tr.hl td,.cmp tr.hl th{color:var(--gold-hi)}
+.cmp tr.hl{background:rgba(212,175,55,.07)}
+.cmp .o{color:var(--gold-hi);font-weight:700}
+.cmp .x{color:var(--dim)}
+
+/* F: globe */
+.globe{margin:34px 0 0;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.03);padding:20px 12px 12px}
+.globe svg{display:block;width:100%;height:auto}
+.globe .cap{font-family:var(--sans);font-size:12px;letter-spacing:.08em;color:var(--dim);text-align:center;margin-top:8px;line-height:1.9}
+
+/* G: 4 panels */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:36px 0 0}
+.panel{border:1px solid rgba(212,175,55,.4);background:rgba(243,230,196,.03);padding:16px 12px 14px;text-align:center;position:relative}
+.panel .no{position:absolute;top:8px;left:10px;font-family:var(--latin);font-size:14px;color:var(--gold)}
+.panel svg{width:34px;height:34px;margin:6px auto 8px;display:block}
+.panel b{display:block;font-family:var(--mincho);font-size:15.5px;color:var(--gold-hi);letter-spacing:.1em;margin-bottom:6px}
+.panel p{font-size:12.5px;color:var(--dim);line-height:1.85;margin:0}
+
+/* H: side by side */
+.sbs{display:grid;gap:12px;margin:34px 0 0}
+.sbs .box{border:1px solid rgba(212,175,55,.35);padding:20px 16px;text-align:center;background:rgba(243,230,196,.02)}
+.sbs .box.gold{border-color:rgba(212,175,55,.7);background:radial-gradient(ellipse 90% 60% at 50% 0%,rgba(212,175,55,.12),transparent 70%)}
+.sbs .box .bt{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.16em;color:var(--dim);margin-bottom:12px}
+.sbs .box.gold .bt{color:var(--gold)}
+.sbs .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.sbs .chips span{font-family:var(--sans);font-size:12.5px;font-weight:600;padding:6px 12px;border:1px solid rgba(212,175,55,.5);color:var(--sand);white-space:nowrap}
+.sbs .box.gold .chips span{background:var(--foil);color:#1d1507;border-color:transparent}
+.sbs .plus{text-align:center;font-size:20px;color:var(--gold);line-height:1}
+.sbs .cap{font-family:var(--sans);font-size:12px;color:var(--dim);text-align:center;letter-spacing:.08em}
+
+/* I: timeline */
+.tl{list-style:none;margin:30px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,rgba(143,111,46,.15),rgba(143,111,46,.6),rgba(143,111,46,.15))}
+.tl li{position:relative;padding:0 0 22px 34px}
+.tl li:last-child{padding-bottom:2px}
+.tl li::before{content:"";position:absolute;left:3px;top:11px;width:11px;height:11px;border-radius:50%;background:#f8f1e0;border:2px solid #8f6f2e}
+.tl .tt{display:block;font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.18em;color:#8f6f2e;margin-bottom:2px}
+.tl .tx{display:block;font-size:15.5px;line-height:1.95;color:var(--paper-ink)}
+
+/* J: price breakdown */
+.breakdown{max-width:340px;margin:20px auto 0;border-top:1px solid rgba(212,175,55,.35);font-family:var(--sans)}
+.breakdown .row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 4px;border-bottom:1px solid rgba(212,175,55,.18);font-size:13.5px;letter-spacing:.06em;color:var(--body)}
+.breakdown .row .v{font-variant-numeric:tabular-nums;white-space:nowrap}
+.breakdown .row.total{border-bottom:0;padding-top:12px;font-weight:700;color:var(--gold-hi);font-size:15px}
 @media(min-width:700px){
   body{font-size:17px}
   h2{font-size:29px}
@@ -254,8 +339,10 @@ footer a{color:#b3a68a;text-decoration:none}
     <div class="hero-kicker">鑑定で選ばれた、あなたへのご案内</div>
     <p class="hero-en">BRAZILIAN CITRINE · 2027</p>
     <h1 class="hero-title"><span class="gg">実りの</span><br><span class="gg">シトリン</span></h1>
+    <p class="hero-lead">11月25日の夜にお返しした鑑定結果を、<br>毎朝、手に乗せられる形に。</p>
     <p class="hero-sub">2027年は、あなたの番です。</p>
-    <div><span class="hero-limit">受付 11/30(月)0:00まで</span></div>
+    <div><span class="hero-limit" id="heroLimit">受付 11/30(月)0:00まで</span></div>
+    <div><a class="hero-plink" href="#price">お代とお届けを先に見る</a></div>
   </div>
   <div class="hero-foot">
     <p class="hero-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</p>
@@ -264,25 +351,21 @@ footer a{color:#b3a68a;text-decoration:none}
 </div>
 
 <!-- TO YOU -->
-<section class="sec-a">
+<section class="sec-a" id="to-you">
   <div class="wrap rv">
     <span class="kicker">TO YOU</span>
     <h2>鑑定で選ばれた、<br>あなたへ</h2>
     <div class="orn"><i></i></div>
     <p>みづきです。</p>
-    <p>このページは、シトリン鑑定にご応募くださり、<strong>鑑定で選ばれた方にだけ</strong>お送りしている、お迎えのご案内です。</p>
-    <p>11月25日の夜にお返しした結果を、思い出しながら、読み進めてください。</p>
-    <p>お代のことも、届くまでのことも、すべてこの1枚に書きました。ゆっくりで大丈夫です。</p>
-    <div class="gbox">
-      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
-      <div class="gbox-in">
-        <h3>覚えておいてほしいのは、<br>3つだけ</h3>
-        <ul class="reasons">
-          <li><strong>原因</strong>　がんばったことを数えずに、すぐ次をがんばっている。これが「摘み忘れ」です。</li>
-          <li><strong>やること</strong>　夜に1つ数えて、朝、玄関で石に置く。</li>
-          <li><strong>なぜ石なのか</strong>　自分で数えたものを、自分では受け取れないからです。石は、私が視て「もう実っている」と認めた印です。</li>
-        </ul>
-      </div>
+    <p>このページは、シトリン鑑定で<strong>選ばれた方にだけ</strong>お送りしている、お迎えのご案内です。</p>
+    <p>11月25日の夜にお返しした結果は、文字でした。<br>文字は、1回読んだら終わってしまいます。<br>だから、あの結果を、<strong>毎朝手に乗せられる形にしました</strong>。</p>
+    <p>お代のことも、届くまでのことも、この1枚に書きました。ゆっくりで大丈夫です。</p>
+    <h3 class="center" style="font-size:19px;color:var(--sand);letter-spacing:.1em;margin:44px 0 0">覚えておいてほしいのは、3つだけ</h3>
+    <!-- 図解A：3枚のカード -->
+    <div class="trio">
+      <div class="card"><span class="tag">原因</span><p>がんばったことを数えずに、すぐ次をがんばっている。これが<strong>「摘み忘れ」</strong>です。</p></div>
+      <div class="card"><span class="tag">やること</span><p>夜に1つ数えて、朝、玄関で石に置く。</p></div>
+      <div class="card"><span class="tag">なぜ石なのか</span><p>自分で数えたものは、自分では受け取れないからです。石は、私が視て<strong>「もう実っている」と認めた印</strong>です。</p></div>
     </div>
   </div>
 </section>
@@ -290,160 +373,254 @@ footer a{color:#b3a68a;text-decoration:none}
 <div class="band" aria-hidden="true"></div>
 
 <!-- THE CAUSE -->
-<section class="sec-b">
+<section class="sec-b" id="cause">
   <div class="wrap rv">
     <span class="kicker">THE CAUSE</span>
     <h2>足りないんじゃない。<br>数えていないだけ。</h2>
     <div class="orn"><i></i></div>
-    <p>毎朝の家のこと。毎月のやりくり。職場で、人が嫌がる役を引き受けること。親の様子を見に行くこと。あなたがこの1年、やめずに続けてきたことを、1つ思い出してください。</p>
-    <p>では、それを数えたことはありますか。たぶん、ないと思います。続けている人は、数える前に、次を始めてしまうからです。</p>
-    <p>私のところには、こんな言葉が届きます。「家族に、ありがとうと言われたことがない」。「自由に使えるお金が、ない」。「家のことがいつも先で、自分の人生を削ってきた」。全部、同じことを言っています。<strong>これだけやってきたのに、自分には何も残っていない。</strong></p>
-    <p>私はこれまで2万人以上の方を視てきて、何度も同じものを視ました。<strong>がんばったことを数えずに、すぐ次をがんばっている人</strong>です。私はこれを<em>「摘み忘れ」</em>と呼んでいます。実ったものを、摘まずに置いている、という意味です。</p>
-    <p>絵にすると、こうです。洗濯物は、もう乾いています。でも取り込まずに、次の洗濯機を回している。乾いたものは、外に出したまま。<strong>あなたのがんばりも、もう乾いています。取り込んでいないだけです。</strong>取り込む、とは、数えることです。</p>
-    <p>2024年も、2025年も、乾いたままのものがありました。人からの「助かった」のひとこと。休んでいい日。頼っていい相手。消えたのではありません。乾いたまま、まだそこにあります。<strong>報われていないのではない。受け取っていないだけです。</strong></p>
-    <div class="pull"><span class="nw">あなたは、足りないんじゃない。</span><br><span class="nw">がんばったことを数えずに、</span><br><span class="nw">次をがんばってきただけ。</span></div>
-    <h2 style="font-size:21px;margin-top:8px">なぜ、数えるだけで変わるのか</h2>
-    <p>人は、足りないと思っているあいだは、頼めません。休めません。「ありがとう」も、受け取れません。足りないのに頼むのは、悪いことに思えるからです。</p>
-    <p>数えると、足りている分が見えます。見えた分だけ、頼める。休める。受け取れる。変わるのは、<em>翌朝の最初の動き</em>です。</p>
-    <p class="center" style="font-size:15px;color:var(--dim);margin:48px 0 8px">2万人以上を視てきて分かった、<br>摘み忘れの人の3つの共通点</p>
-    <ul class="fit">
-      <li data-n="01"><b>人のことは覚えているのに、自分のことだけ後回しにする</b><span>親の病院の日は覚えている。自分の通院は、半年先に延ばしたまま。自分の分は、かごに入れてから戻す。</span></li>
-      <li data-n="02"><b>受け取る前に、返す</b><span>ほめられると「いえ、まだまだです」と先に言う。「助かった」と言われた夜も、数えるのはやり残したことのほう。</span></li>
-      <li data-n="03"><b>止まると、落ち着かない</b><span>休みの日に休むと、何か忘れている気がして、家のことを始めてしまう。</span></li>
+    <p>毎朝の家のこと。毎月のやりくり。職場で、人が嫌がる役を引き受けること。親の様子を見に行くこと。<br>この1年、やめずに続けてきたことを、1つだけ思い出してください。</p>
+    <p>それを、数えたことはありますか。<br>たぶん、ないと思います。続けている人は、数える前に、次を始めてしまうからです。</p>
+    <p>私のところには、こんな言葉が届きます。<br>「家族に、ありがとうと言われたことがない」<br>「自由に使えるお金が、ない」<br>「家のことがいつも先で、自分の人生を削ってきた」<br>全部、同じことを言っています。<strong>これだけやってきたのに、自分には何も残っていない。</strong></p>
+    <p>私は2万人以上の方を視てきて、何度も同じものを視ました。私はこれを<em>「摘み忘れ」</em>と呼んでいます。</p>
+    <!-- 図解B：洗濯物の比喩＋循環図 -->
+    <figure class="fig" style="margin-left:0;margin-right:0">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <img src="img/laundry.jpg" alt="乾いた洗濯物がベランダに干されたままの様子（イメージ）" width="1254" height="1254" loading="lazy">
+      <figcaption class="fig-cap">乾いているのに、取り込んでいない</figcaption>
+    </figure>
+    <div class="cycle" role="img" aria-label="がんばる、数えずに置く、すぐ次をがんばる、という繰り返しの図">
+      <svg viewBox="0 0 340 148" xmlns="http://www.w3.org/2000/svg" font-family="Hiragino Kaku Gothic ProN,Hiragino Sans,sans-serif">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d4af37"/></marker></defs>
+        <rect x="6" y="18" width="96" height="40" rx="3" fill="#131a2e" stroke="#d4af37" stroke-opacity=".55"/>
+        <rect x="122" y="18" width="96" height="40" rx="3" fill="#131a2e" stroke="#d4af37" stroke-opacity=".55"/>
+        <rect x="238" y="18" width="96" height="40" rx="3" fill="#131a2e" stroke="#d4af37" stroke-opacity=".55"/>
+        <text x="54" y="43" text-anchor="middle" font-size="12.5" fill="#ece0c2">がんばる</text>
+        <text x="170" y="43" text-anchor="middle" font-size="12.5" fill="#ece0c2">数えずに置く</text>
+        <text x="286" y="43" text-anchor="middle" font-size="12.5" fill="#ece0c2">次をがんばる</text>
+        <line x1="104" y1="38" x2="118" y2="38" stroke="#d4af37" stroke-width="1.4" marker-end="url(#ah)"/>
+        <line x1="220" y1="38" x2="234" y2="38" stroke="#d4af37" stroke-width="1.4" marker-end="url(#ah)"/>
+        <path d="M286,60 L286,102 Q286,116 272,116 L68,116 Q54,116 54,102 L54,64" fill="none" stroke="#d4af37" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#ah)"/>
+        <text x="170" y="136" text-anchor="middle" font-size="11.5" fill="#aea591">数えないまま、くり返してきた</text>
+      </svg>
+      <div class="cap">摘み忘れの、くり返し</div>
+    </div>
+    <p style="margin-top:36px">あなたのがんばりも、もう乾いています。<strong>取り込んでいないだけ。</strong><br>取り込む、とは、数えることです。</p>
+    <p>人からの「助かった」のひとこと。休んでいい日。頼っていい相手。<br>乾いたままのものが、まだ、そこにあります。</p>
+    <p class="center" style="font-size:15px;color:var(--dim);margin:48px 0 8px">摘み忘れの人の、3つの共通点</p>
+    <!-- 図解C：チェックリスト -->
+    <ul class="check">
+      <li><b>人のことは覚えているのに、自分のことだけ後回しにする</b><span>親の病院の日は覚えている。自分の通院は、半年先に延ばしたまま。</span></li>
+      <li><b>受け取る前に、返す</b><span>ほめられると「いえ、まだまだです」と先に言う。</span></li>
+      <li><b>止まると、落ち着かない</b><span>休みの日に休むと、何か忘れている気がする。</span></li>
     </ul>
-    <p style="margin-top:36px">数えずに次をがんばってきたのは、欲張りだからでも、心配性だからでもありません。<strong>守るものがあったからです。</strong>足りなかったのは、「もう数えていい」と教えてくれる人だけでした。</p>
+    <p style="margin-top:32px">1つでも、思い当たりましたか。<br>責めたいのではありません。</p>
+    <p>数えずに次をがんばってきたのは、<strong>守るものがあったからです。</strong></p>
+    <p>足りないと思っているあいだは、頼めません。休めません。「ありがとう」も、受け取れません。<br>数えると、足りている分が見えてきます。</p>
+    <p>ただ、数えることはできても、<strong>受け取るところで止まってしまう</strong>。<br>摘み忘れの人は、そうなんです。</p>
   </div>
 </section>
 
 <!-- WHY EVERY MORNING -->
-<section class="sec-a">
+<section class="sec-a" id="why-stone">
   <div class="wrap rv">
     <span class="kicker">WHY EVERY MORNING</span>
     <h2>自分で数えたものは、<br>自分では、<br>受け取れない。</h2>
     <div class="orn"><i></i></div>
-            <p>数えた夜は、楽になります。でも朝になると、また「足りない」から1日が始まる。あなたが悪いのではありません。<strong>摘み忘れの人は、自分で数えたものを、自分では受け取れないんです。</strong>人のほめ言葉を「まだまだです」と返す人が、自分のほめ言葉だけ受け取れるはずがありません。</p>
-    <p>洗濯物も同じです。取り込んでも、自分では、まだ湿っている気がする。だから朝、また外に干してしまう。「もう乾いているよ」と誰かに言ってもらって、初めてたためます。取り込むのが、数えること。<em>「もう乾いている」と認めてくれる、自分以外の誰か</em>が要ります。</p>
-    <div class="gbox">
-      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
-      <div class="gbox-in">
-        <h3>なぜ、メモやノート<br>ではなく、この石なのか</h3>
-        <ul class="reasons">
-          <li>メモもノートも、<strong>書くのも、読むのも、あなた</strong>です。自分で自分を認めて受け取れる人なら、そもそも摘み忘れていません。</li>
-          <li>家族も、職場も、言ってくれません。言ってくれるなら、むなしくなっていません。</li>
-          <li>だから、<strong>自分以外の誰かが「もう足りている」と認めた印</strong>が要ります。</li>
-          <li>25日にお返しした結果は、文字です。文字は1回読んで終わります。だから、<strong>毎朝手に乗せられるものに、認めた印を移しました。</strong></li>
-        </ul>
+    <!-- 図解D：2つの流れの比較 -->
+    <div class="flows">
+      <div class="flow">
+        <h4>夜に数えただけだと</h4>
+        <div class="st">夜に、1つ数える</div>
+        <div class="ar">↓</div>
+        <div class="st">朝、また「足りない」に戻る</div>
+        <div class="ar">↓</div>
+        <div class="st">数え直しから、1日が始まる</div>
+      </div>
+      <div class="flow good">
+        <h4>認めた印があると</h4>
+        <div class="st">夜に、1つ数える</div>
+        <div class="ar">↓</div>
+        <div class="st">朝、玄関で認めた印に置く</div>
+        <div class="ar">↓</div>
+        <div class="st">「もう認められている」で出かける</div>
       </div>
     </div>
-    <p style="margin-top:40px">私は2万人以上の方を視てきましたが、手のひらに置くものを人にお勧めしたことは、数えるほどしかありません。ものに頼ってほしくないからです。それでも今回お渡しするのは、<strong>認める人がそばにいない方に、認めた印を残すため</strong>です。だから、渡す前に視ます。鑑定が先で、石があと。この順番は変えません。</p>
-    <p>同じ仕事の方には「それは言わないほうがいい」と止められました。年末の占いは、「来年はいい年です」のあとに「ここだけ気をつけて」を1つ足します。「気をつけて」を持ち帰った人は、足りないままなので、来年もまた来るからです。「もう足りています」と言われた人は、来年、来ません。だから、誰も言わないんです。今回は、黙らないと決めました。</p>
-    <p>鑑定は、足りないところを探す仕事ではありません。<strong>もう実っている分を、見つけて、認める仕事</strong>です。</p>
+    <p style="margin-top:32px">あなたが悪いのではありません。<br>人のほめ言葉を「まだまだです」と返す人が、自分のほめ言葉だけ受け取れるはずがないんです。</p>
+    <p>洗濯物も、「もう乾いているよ」と誰かに言ってもらって、初めてたためます。<br><em>自分以外の、その「誰か」が要ります。</em></p>
+    <h2 style="font-size:21px;margin-top:52px">なぜ、メモやノート<br>ではなく、この石なのか</h2>
+    <!-- 図解E：比較表 -->
+    <table class="cmp">
+      <thead><tr><th></th><th>認めるのは誰か</th><th>毎朝手に乗るか</th></tr></thead>
+      <tbody>
+        <tr><th>メモ・ノート</th><td>あなた自身</td><td class="x">―（書くのも読むのも、あなた）</td></tr>
+        <tr><th>家族・職場</th><td>言葉にしてもらえるとは限らない</td><td class="x">―</td></tr>
+        <tr><th>25日の鑑定結果</th><td>みづき</td><td class="x">×（文字は、1回読んで終わる）</td></tr>
+        <tr class="hl"><th>この石</th><td>みづきが視て、認めた印</td><td class="o">○（毎朝、手に乗る）</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:32px">メモもノートも、書くのも読むのも、あなたです。<br>25日にお返しした結果は、私が視たものです。でも、文字は1回読んで終わってしまう。<br>だから、<strong>私が「もう実っている」と認めた印を、毎朝手に乗せられるものに移しました。</strong></p>
+    <p>ここだけ、少し私の話をさせてください。<br>私は、手のひらに置くものを人にお勧めしたことは、数えるほどしかありません。ものに頼ってほしくないからです。<br>それでも今回お渡しするのは、<strong>認める人がそばにいない方に、認めた印を残すため</strong>です。<br>だから、渡す前に視ます。鑑定が先で、石があと。この順番は、変えません。</p>
+    <div class="pull">鑑定は、足りないところを<br>探す仕事ではありません。<br><span class="nw">もう実っている分を、見つけて、</span><br><span class="nw">認める仕事です。</span></div>
   </div>
 </section>
 
 <div class="band" aria-hidden="true"></div>
 
 <!-- FROM BRAZIL / THE STONE -->
-<section class="sec-b">
+<section class="sec-b" id="brazil">
   <div class="wrap rv">
     <span class="kicker">FROM BRAZIL</span>
     <h2>ブラジルで出会った、<br>黄金の石</h2>
     <div class="orn"><i></i></div>
-    <p>ブラジルは、いま、春から夏へ向かっています。日本が冬に向かういま、地球の裏側は、これから実る方へ進んでいます。</p>
+    <!-- 図解F：地球の表と裏 -->
+    <div class="globe" role="img" aria-label="日本は冬へ、地球の裏側のブラジルは春から夏へ向かっている図">
+      <svg viewBox="0 0 340 190" xmlns="http://www.w3.org/2000/svg" font-family="Hiragino Kaku Gothic ProN,Hiragino Sans,sans-serif">
+        <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d4af37"/></marker></defs>
+        <circle cx="170" cy="88" r="62" fill="none" stroke="#d4af37" stroke-opacity=".55" stroke-width="1.4"/>
+        <ellipse cx="170" cy="88" rx="30" ry="62" fill="none" stroke="#d4af37" stroke-opacity=".25"/>
+        <line x1="108" y1="88" x2="232" y2="88" stroke="#d4af37" stroke-opacity=".25"/>
+        <circle cx="196" cy="48" r="5" fill="#f3e6c4"/>
+        <circle cx="138" cy="130" r="5" fill="#d4af37"/>
+        <path d="M206,58 Q262,96 240,140" fill="none" stroke="#d4af37" stroke-width="1.3" stroke-dasharray="4 4" marker-end="url(#ah2)"/>
+        <text x="212" y="42" font-size="13" fill="#ece0c2" font-weight="700">日本</text>
+        <text x="212" y="60" font-size="11.5" fill="#aea591">冬へ</text>
+        <text x="66" y="126" font-size="13" fill="#ece0c2" font-weight="700">ブラジル</text>
+        <text x="52" y="144" font-size="11.5" fill="#aea591">春から夏へ</text>
+        <text x="262" y="104" font-size="11" fill="#aea591">地球の裏側</text>
+      </svg>
+      <div class="cap">日本が冬に向かういま、ブラジルは実る方へ</div>
+    </div>
     <div class="ph-full">
-      <img src="img/brazil_church.jpg" alt="夕日に照らされたブラジルの聖堂の風景（イメージ）" width="923" height="494">
+      <img src="img/brazil_church.jpg" alt="夕日に照らされたブラジルの聖堂の風景（イメージ）" width="923" height="494" loading="lazy">
       <span class="ph-cap">イメージ</span>
       <div class="ov">実った穂と、<br>同じ色をした石。</div>
     </div>
-    <p>そこで出会ったのが、この石です。</p>
     <h2 style="margin-top:40px">シトリン</h2>
-    <p>黄色い、水晶の仲間の石です。昔から、<strong>実りを受け取る石</strong>と言われてきました。黄金色が金貨や麦の穂を思わせることから、商人が守り石にしてきたと伝わっています（言い伝えです）。この石の役割は、1つ。<strong>私が視て、「もう実っている」と認めた印</strong>です。</p>
-    <p>報われた分を、受け取って、置く。この石の役割は、色と名前に、そのまま入っています。お金も、家族からの「ありがとう」も、自分の時間も、あきらめていたことも。<em>入ってきた分を「足りない」で流さずに、残す</em>ための石です。</p>
+    <p>黄色い、水晶の仲間の石です。昔から、<strong>実りを受け取る石</strong>と言われてきました。黄金色が金貨や麦の穂を思わせることから、商人が守り石にしてきたと伝わっています（言い伝えです）。</p>
+    <p>この石の役割は、1つ。<strong>私が視て、「もう実っている」と認めた印</strong>です。<br>家族からの「ありがとう」も、自分の時間も。入ってきた分を「足りない」で流さずに、残しておくための印です。</p>
     <figure class="fig" style="margin-left:0;margin-right:0">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
-      <img src="img/citrine_sphere.jpg" alt="黄金色に澄んだ天然シトリン" width="1200" height="1112">
+      <img src="img/citrine_sphere.jpg" alt="黄金色に澄んだ天然シトリン" width="1200" height="1112" loading="lazy">
       <figcaption class="fig-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</figcaption>
     </figure>
-    <p style="margin-top:40px">天然のシトリンは、1つとして同じ色がありません。<em>あなたの手に届く1つは、世界に1つだけの色です。</em>1つずつ、光に透かして、色を見て選びました。天然のものを1つずつ選んだ分なので、数には限りがあります。</p>
+    <figure class="fig" style="margin-left:0;margin-right:0">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <img src="img/wheat_stone.jpg" alt="黄金色の麦の穂と、その色に似た天然シトリン（イメージ）" width="1254" height="1254" loading="lazy">
+    </figure>
+    <p style="margin-top:40px">天然のシトリンは、1つとして同じ色がありません。1つずつ、光に透かして、色を見て選びました。そのため、数には限りがあります。</p>
   </div>
 </section>
 
 <!-- HOW TO USE -->
-<section class="sec-a">
+<section class="sec-a" id="howto">
   <div class="wrap rv">
     <span class="kicker">HOW TO USE</span>
     <h2>使い方は1つ。<br>置く場所も1つ、<br>玄関です。</h2>
     <div class="orn"><i></i></div>
-    <ol class="steps">
-      <li data-n="01"><span class="s-t">夜、寝る前に、今日したことを1つ数える</span><span class="s-d">小さくていいです。心の中で大丈夫です。</span></li>
-      <li data-n="02"><span class="s-t">朝、出かける前に、玄関で石を手のひらに乗せる</span></li>
-      <li data-n="03"><span class="s-t">昨日数えた1つを、石に置く</span></li>
-      <li data-n="04"><span class="s-t">戻して、出る</span><span class="s-d">それだけです。出かけない日も、朝、玄関で置いてください。</span></li>
-    </ol>
+    <!-- 図解G：4ステップのパネル図 -->
+    <div class="panels">
+      <div class="panel"><span class="no">01</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linecap="round"><path d="M32 28a11 11 0 1 1-9-16 13 13 0 1 0 9 16z" fill="rgba(212,175,55,.12)"/></svg>
+        <b>夜、数える</b><p>寝る前に、今日したことを1つ数える。小さくていいです。心の中で大丈夫です。</p></div>
+      <div class="panel"><span class="no">02</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linecap="round"><circle cx="24" cy="15" r="5.5"/><path d="M24 24v4M10 33c4-4 8-5 11-3 3 1.6 8 1.6 12-1 2-1.3 5 0 5 0-2.5 6-8 10-14 10S13 36 10 33z" fill="rgba(212,175,55,.12)"/></svg>
+        <b>朝、手に乗せる</b><p>出かける前に、玄関で石を手のひらに乗せる。</p></div>
+      <div class="panel"><span class="no">03</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round"><path d="M24 8 38 20 24 40 10 20z" fill="rgba(212,175,55,.12)"/><path d="M10 20h28M24 8l-5 12 5 20 5-20z"/></svg>
+        <b>石に置く</b><p>昨日数えた1つを、石に置く。</p></div>
+      <div class="panel"><span class="no">04</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linecap="round"><path d="M14 6h16v36H14z" fill="rgba(212,175,55,.12)"/><circle cx="26" cy="24" r="1.6" fill="#d4af37"/><path d="M34 24h8M39 20l4 4-4 4"/></svg>
+        <b>戻して、出る</b><p>それだけです。出かけない日も、朝、玄関で置いてください。</p></div>
+    </div>
+    <figure class="fig" style="margin-left:0;margin-right:0">
+      <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
+      <img src="img/genkan_palm.jpg" alt="朝の玄関で、手のひらにシトリンを乗せた様子（イメージ）" width="1254" height="1254" loading="lazy">
+      <figcaption class="fig-cap">朝、玄関で、手のひらに</figcaption>
+    </figure>
     <div class="gbox">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
       <div class="gbox-in">
         <h3>なぜ、玄関なのか</h3>
-        <p style="font-size:14px;color:var(--dim);text-align:center;margin-bottom:16px">2万人以上を視てきて、<br>私はこう考えています。</p>
         <ul class="reasons">
-          <li>玄関は、あなたが今日のがんばりに出ていく場所です。<strong>出る前に、認めた印に、昨日の分を置いていく。</strong>「足りない」で出る朝が、「もう認められている」で出る朝に変わります。</li>
-          <li><strong>必ず通る場所です。</strong>出かけない日も、朝、玄関まで行って、乗せて、置いてください。</li>
-          <li>帰ってきたとき、<strong>最初に目に入る場所です。</strong>1年続けると、365回、認められてから出た朝になります。</li>
+          <li>玄関は、あなたが今日のがんばりに出ていく場所です。<strong>出る前に、昨日の分を、認めた印に置いていく。</strong>「足りない」で出る朝を、「もう認められている」で出る朝にしていくための場所です。</li>
+          <li><strong>必ず通る場所です。</strong>帰ってきたとき、最初に目に入る場所でもあります。</li>
         </ul>
       </div>
     </div>
-    <div class="pull" style="font-size:18px">私が視て、<br>「もう実っている」と<br>認めた印。<br>それが、この石の役割です。</div>
+    <p class="center" style="margin-top:38px"><a class="hero-plink" style="animation:none" href="#price">お代とお届けを見る ↓</a></p>
   </div>
 </section>
 
 <div class="band" aria-hidden="true"></div>
 
-<!-- ALREADY -->
-<section class="sec-b">
+<!-- SIDE BY SIDE -->
+<section class="sec-b" id="side">
   <div class="wrap rv">
     <span class="kicker">SIDE BY SIDE</span>
     <h2>すでに、石やお守りを<br>置いている方へ</h2>
     <div class="orn"><i></i></div>
-    <p>流れを通すもの。整えるもの。守ってくれるもの。石でも、お守りでも、お札でも。これまでに何か1つでも手元に置いてきた方へ。</p>
-    <p>それは、正しかったんです。手放す必要はありません。</p>
-    <p>ただ、役割が違います。通すもの、整えるもの、守るものは、そのままで大丈夫です。<strong>通ってきたものを、「もう受け取っていい」と認める印は、別の役割です。</strong></p>
-    <div class="pull" style="font-size:18px">いま置いているものの、<br>隣に、置いてください。</div>
+    <p>それは、正しかったんです。手放す必要はありません。<br>役割が違うだけです。</p>
+    <!-- 図解H：役割の違い -->
+    <div class="sbs">
+      <div class="box"><div class="bt">いま置いているもの</div><div class="chips"><span>流れを通す</span><span>整える</span><span>守る</span></div></div>
+      <div class="plus">＋</div>
+      <div class="box gold"><div class="bt">実りのシトリン</div><div class="chips"><span>もう受け取っていい、と認める</span></div></div>
+      <div class="cap">役割が違うから、隣に置けます</div>
+    </div>
+    <div class="pull" style="font-size:18px">役割が違うから、<br>いま置いているものの隣に、<br>置いてください。</div>
   </div>
 </section>
 
-<!-- HONEST -->
-<section class="sec-a">
+<!-- HONESTLY -->
+<section class="sec-a" id="honest">
   <div class="wrap rv">
     <span class="kicker">HONESTLY</span>
     <h2>正直に、お伝えします</h2>
     <div class="orn"><i></i></div>
     <p>シトリンは、あなたを別の人に変える石ではありません。<strong>あなたがもう手にしている実りを、私が視て認めた印です。</strong>効果・効能を保証するものではありません。</p>
     <p>だから私は、売る前に視ます。あなたを視ていないのに、お渡しすることはしません。鑑定で選ばれた方にだけ、このご案内をお送りしています。</p>
-    <p>「自分のためにものを迎えていいのか」と迷った方へ。貯金が先。家族が先。自分のことは、あとでいい。そう生きてきた方ほど、迷うと思います。<strong>これは、ご褒美ではありません。報われた分を、認めた印です。</strong>その迷いが、かごに入れて戻す手です。摘み忘れ、そのものです。<strong>自分のために1つ迎えること。それが、2027年に最初に数える1つになります。</strong></p>
-    <h2 style="margin-top:56px;font-size:22px">どうして、この冬なのか</h2>
-    <p>年を越してから置くと、2027年は「足りない」から始まっています。年を越す前に置いて、1つ置いてから出る朝に、体が慣れる時間が要るんです。</p>
-    <p>ご褒美の値段と、比べないでください。比べるなら、同じ1年をもう1度くり返すことと比べてください。認めた印は、1つ迎えれば、2027年の365日、同じ玄関にあります。</p>
-    <div class="pull">数えないままで、<br>年を越さない。</div>
-    <p class="center">受付は、<strong>11月30日(月) 0:00</strong>で締めます。</p>
   </div>
 </section>
 
 <!-- IMAGINE (paper) -->
-<div class="paper">
+<div class="paper" id="imagine">
   <div class="wrap rv">
     <span class="kicker">IMAGINE 2027</span>
     <h2>少しだけ、<br>想像してみてください</h2>
     <div class="orn"><i></i></div>
-    <div class="scene">
-      <p>2027年の、ある朝です。玄関で1つ数えてから、出ていく。</p>
-      <p>職場で「助かった」と言われて、「ありがとう」と受け取る。買い物で、自分の分を、かごから戻さずに買う。親の病院の帰りに、半年延ばしていた自分の通院を予約する。</p>
-      <p>家族に「今日は任せた」と言って、先に休む夜。日曜日に、休む。若いころにあきらめていたことを、夜に少しだけ、自分の力でやってみる。</p>
-    </div>
-    <p>そして2027年の12月。1年をふり返るとき、数えているのは、できなかったことでしょうか。それとも、できたことでしょうか。</p>
-    <p>1年前より少しだけ、<strong>数えられるものが増えている。</strong>そういう年末を、迎えていただきたいんです。</p>
-    <p>そして、あなたが先に数えると、見ている大切な人も、数えていいと知ります。あなたが受け取ることは、わがままではなく、その人へのいちばん静かな贈り物です。</p>
+
+    <figure class="fig" style="margin:0">
+      <img src="img/genkan_morning.jpg" alt="朝の光が差す玄関に置かれたシトリン（イメージ）" width="1254" height="1254" loading="lazy">
+      <figcaption class="fig-cap" style="color:#8a7a55">2027年の、ある朝</figcaption>
+    </figure>
+    <!-- 図解I：2027年の時系列 -->
+    <ul class="tl">
+      <li><span class="tt">朝</span><span class="tx">玄関で1つ置いてから、出ていく。</span></li>
+      <li><span class="tt">職場</span><span class="tx">「助かった」と言われて、「ありがとう」と受け取る。</span></li>
+      <li><span class="tt">買い物</span><span class="tx">自分の分を、かごから戻さずに買う。</span></li>
+      <li><span class="tt">夜</span><span class="tx">家族に「今日は任せた」と言って、先に休む。</span></li>
+    </ul>
+    <p style="margin-top:30px">こうなる、とお約束するものではありません。<br>ただ、2027年の12月に1年をふり返るとき、できたことを数えている。<br>そういう年末を、迎えていただきたいんです。</p>
   </div>
 </div>
+
+
+<!-- HESITATE -->
+<section class="sec-b" id="hesitate">
+  <div class="wrap rv">
+    <span class="kicker">FOR YOU</span>
+    <h2>「自分のために、<br>ものを迎えていいのか」と<br>迷っている方へ</h2>
+    <div class="orn"><i></i></div>
+    <p>貯金が先。家族が先。自分のことは、あとでいい。<br>そう生きてきた方ほど、迷うと思います。<br>その迷いは、間違いではありません。ずっとそうやって、守ってきたからです。</p>
+    <p>自分のために、迎えていいのか。<br><strong>これは、ご褒美ではありません。この1年、もう報われていた分を、認めた印です。</strong><br>あなたが受け取ることは、わがままではありません。</p>
+    <p><strong>お代が、軽くないこと。</strong><br>79,800円は、軽いお代ではありません。だから、このすぐ下に、隠さずに全部書きました。<br>迷うなら、迷ったままで大丈夫です。受付の締めまで、ゆっくり考えてください。<br>毎月のやりくりや、暮らしのためのお金を削ってまで、迎えないでください。</p>
+    <p><strong>本当に、要るのか。</strong><br>数えることは、石がなくても、今夜からできます。それで足りる方は、それで大丈夫です。<br>この石は、数えた1つを、毎朝置いていく場所です。数えるのはあなた、認めるのは私。その役割を分けるためのものです。</p>
+    <p>迎えるかどうかは、あなたが決めてください。<br>どちらを選んでも、あなたがこの1年続けてきたことは、もう実っています。</p>
+    <h2 style="margin-top:56px;font-size:22px">どうして、この冬なのか</h2>
+    <p>この1年をふり返る時期だから、この冬にご案内しています。<br>届く時期は、STORESの商品ページでご確認ください。</p>
+    <p class="center">受付は、<strong>11月30日(月) 0:00</strong>で締めます。</p>
+  </div>
+</section>
 
 <!-- PRICE -->
 <section class="sec-b" id="price">
@@ -451,23 +628,23 @@ footer a{color:#b3a68a;text-decoration:none}
     <span class="kicker">PRICE</span>
     <h2>お代と、お届け</h2>
     <div class="orn"><i></i></div>
-    <p class="center">お代をお見せする前に、1つだけ聞かせてください。</p>
-    <div class="ask">2027年の365日が、<br>2026年と同じ1年ではなくなるとしたら。<br>あなたは、いくらまでなら出せますか。</div>
-    <p>迎えなかったとしても、起きることは1つだけです。2026年と全く変わらない1年が、もう1度始まる。それ以上のことは、何も起きません。それでも、いいですか。</p>
-    <p>このシトリンは、1つ迎えれば、2027年の365日、同じ玄関で、毎朝あなたの「昨日の1つ」を受け取る、認めた印になります。</p>
-    <ul class="reasons">
-      <li><strong>1日あたり、約219円。</strong>自動販売機の飲みもの1本ほどで、365日、毎朝働きます。</li>
-      <li><strong>通常149,800円のお品を、79,800円で。</strong>鑑定で選ばれた方だけへの、今回のお値段です。</li>
-      <li><strong>お代がかかるのは、この石だけ。</strong>本来1万円の参拝代行と、シトリン鑑定は、無料でお受けいただいています。</li>
-    </ul>
+    <p>お代のことも、正直に書きます。</p>
+    <p>1つずつ光に透かして選んだ、天然のシトリンです。渡す前に、私が視ます。<br>お代がかかるのは、この石だけです。シトリン鑑定のお代は、いただいていません。</p>
+    <!-- 図解J：価格ボックス（内訳の見える化） -->
     <div class="price-stage">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
       <div class="price-in">
         <div class="price-label">鑑定で選ばれた方へのご案内</div>
         <div class="price-name">実りのシトリン</div>
-        <div class="price-old">通常価格 <s>149,800円</s>（税込）<span class="off">47%OFF</span></div>
+        <div class="price-old">通常価格 <s>149,800円</s>（税込）</div>
         <div class="price-now"><span class="yen">¥</span>79,800<span class="tax">（税込）</span></div>
-        <div class="price-ship">送料 1,000円 ／ お支払い総額 <b>80,800円</b></div>
+        <div class="breakdown">
+          <div class="row"><span>石のお代（税込）</span><span class="v">79,800円</span></div>
+          <div class="row"><span>送料</span><span class="v">1,000円</span></div>
+          <div class="row"><span>1日あたり</span><span class="v">約221円</span></div>
+          <div class="row total"><span>お支払い総額</span><span class="v">80,800円</span></div>
+        </div>
+        <div style="font-size:11px;color:var(--dim);text-align:center;margin-top:8px;letter-spacing:.05em">1日あたりは、お支払い総額を365日で割った場合</div>
         <div class="price-badges"><span class="fill">受付 11/30(月)0:00まで</span><span>数に限りあり</span></div>
       </div>
     </div>
@@ -475,6 +652,12 @@ footer a{color:#b3a68a;text-decoration:none}
       <div class="cd-l" id="cdl">受付締切まで</div>
       <div class="cd-t"><span class="n" id="cdd">0</span><span class="u">日</span><span class="n" id="cdh">00</span><span class="u">時間</span><span class="n" id="cdm">00</span><span class="u">分</span></div>
     </div>
+    <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
+    <p class="cta-under js-buy">STORESの決済ページが開きます。注文確認メールが届けば、受付完了です。</p>
+    <p class="cta-under">効果・効能を保証するものではありません。</p>
+    <div class="wait js-before" hidden>11/26 受付開始<small>受付は11月30日(月) 0:00まで</small></div>
+    <div class="wait js-after" hidden>お迎えの受付は終了しました<small>ありがとうございました</small></div>
+    <p style="margin-top:34px">1つ迎えれば、毎朝、同じ玄関で、あなたの「昨日の1つ」を受け取る印になります。<br>1年続けると、<strong>365回、認められてから出た朝</strong>になります。</p>
     <table class="spec">
       <tr><th>商品名</th><td>実りのシトリン（天然シトリン）</td></tr>
       <tr><th>お代</th><td>79,800円（税込）／通常価格149,800円</td></tr>
@@ -482,18 +665,21 @@ footer a{color:#b3a68a;text-decoration:none}
       <tr><th>受付期間</th><td>11月30日(月) 0:00まで</td></tr>
       <tr><th>大きさ</th><td>手のひらで包める大きさ（天然石のため1つずつ異なります）</td></tr>
       <tr><th>お届け</th><td>中身の分からない無地の箱でお送りします。届く時期は商品ページをご確認ください。</td></tr>
-      <tr><th>お支払い</th><td>STORESの決済ページで行います。クレジットカードでお支払いの場合、カード会社のサービスで分割払いに変更できます（カード会社によって異なります）。</td></tr>
+      <tr><th>お支払い</th><td>STORESの決済ページで行います。クレジットカードでお支払いの場合、カード会社のサービスで分割払いに変更できます（カード会社によって異なります）。分割払いには、カード会社の手数料がかかる場合があります。</td></tr>
       <tr><th>ご案内先</th><td>シトリン鑑定にご応募くださり、鑑定で選ばれた方</td></tr>
     </table>
 
     <h2 style="margin-top:64px;font-size:22px">お迎えの流れ</h2>
+    <!-- 図解K：お迎えの流れ（3ステップ） -->
     <ol class="steps" style="margin-top:24px">
-      <li data-n="01"><span class="s-t">下のボタンからSTORESへ</span><span class="s-d">ボタンを押すと、STORESの決済ページが開きます。</span></li>
-      <li data-n="02"><span class="s-t">ご注文とお支払い</span><span class="s-d">STORESの決済ページで手続きをしてください。</span></li>
+      <li data-n="01"><span class="s-t">下のボタンからSTORESへ</span><span class="s-d">STORESの決済ページが開きます。</span></li>
+      <li data-n="02"><span class="s-t">ご注文とお支払い</span><span class="s-d">STORESの決済ページで、ご注文とお支払いの手続きをしてください。</span></li>
       <li data-n="03"><span class="s-t">注文確認メールが届けば、受付完了</span><span class="s-d">STORESから届くメールをご確認ください。</span></li>
     </ol>
 
-    <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>STORESの決済ページへ進みます</small></a>
+    <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
+    <p class="cta-under js-buy">STORESの決済ページが開きます。お支払い総額 80,800円</p>
+    <div class="wait js-before" hidden>11/26 受付開始<small>受付は11月30日(月) 0:00まで</small></div>
     <div class="wait js-after" hidden>お迎えの受付は終了しました<small>ありがとうございました</small></div>
   </div>
 </section>
@@ -509,32 +695,33 @@ footer a{color:#b3a68a;text-decoration:none}
       <details><summary>すでに石やお守りを置いていても、迎えていいですか。</summary><div class="faq-a"><p>はい。役割が違うので、いま置いているものの隣に置いていただけます。</p></div></details>
       <details><summary>色や形は、写真と同じですか。</summary><div class="faq-a"><p>天然石のため、色味・模様・大きさは1つ1つ異なります。写真はイメージです。</p></div></details>
       <details><summary>家族に知られずに受け取れますか。</summary><div class="faq-a"><p>中身の分からない無地の箱でお送りします。</p></div></details>
-      <details><summary>分割で支払えますか。</summary><div class="faq-a"><p>クレジットカードでお支払いいただいた場合、お使いのカード会社のサービスで、あとから分割払いに変更できます。変更の方法や回数は、カード会社によって異なりますので、カード会社にご確認ください。</p></div></details>
+      <details><summary>分割で支払えますか。</summary><div class="faq-a"><p>クレジットカードでお支払いいただいた場合、お使いのカード会社のサービスで、あとから分割払いに変更できます。変更の方法や回数はカード会社によって異なりますので、カード会社にご確認ください。分割払いには、カード会社の手数料がかかる場合があります。</p></div></details>
       <details><summary>注文できたか分かりません。</summary><div class="faq-a"><p>STORESから注文確認メールが届いていれば受付済みです。届かない場合は、ご注文番号とお名前をLINEでお知らせください。カード番号や確認コードは送らないでください。</p></div></details>
       <details><summary>届く時期や、返品・交換について知りたいです。</summary><div class="faq-a"><p>STORESの商品ページと、特定商取引法に基づく表記をご確認ください。</p></div></details>
+      <details><summary>少し考えてから決めてもいいですか。</summary><div class="faq-a"><p>はい。受付は11月30日(月) 0:00までです。ゆっくり読んで、決めてください。</p></div></details>
     </div>
   </div>
 </section>
 
 <!-- LAST -->
-<section class="final">
+<section class="final" id="final">
   <div class="wrap rv">
     <span class="kicker">FROM MIZUKI</span>
     <h2>最後に</h2>
     <div class="orn"><i></i></div>
-    <div class="portrait"><span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span><img src="img/mizuki.jpg" alt="みづき" width="720" height="960"></div>
+    <div class="portrait"><span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span><img src="img/mizuki.jpg" alt="みづき" width="720" height="960" loading="lazy"></div>
     <div class="lead">
-      <p>2027年は、がんばった人に配られる年ではなく、数え始めた人に配られる年だと、私は感じています。</p>
-      <p>誰かのためにがんばる年ではなく、自分の力で、1つ成し遂げる年に。若いころにあきらめていたことを、取り戻す年に。</p>
       <p>ずっと順番が後ろだったあなたへ。<strong>2027年は、あなたの番です。</strong></p>
+      <p>数えることは、今夜からできます。<br>その隣に、私が視て認めた印を、置いておきたい。<br>そう思って、このご案内をお送りしました。</p>
       <p>不安なまま、ひとりにしないからね。</p>
     </div>
     <p class="sig">みづき</p>
     <div class="peak">
-      <div class="l1">2027年を迎える前に。</div>
-      <div class="l2">数えないままで、<br><em>年を越さない。</em></div>
+      <div class="l2">夜に数えた1つを、<br><em>朝、置く場所を。</em></div>
     </div>
     <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
+    <p class="cta-under js-buy">STORESの決済ページが開きます。お支払い総額 80,800円</p>
+    <div class="wait js-before" hidden>11/26 受付開始<small>受付は11月30日(月) 0:00まで</small></div>
     <div class="wait js-after" hidden>お迎えの受付は終了しました</div>
     <p class="cta-under">受付は11月30日(月) 0:00まで</p>
     <p class="legal">天然石のため、色味・模様・大きさに個性があります。効果・効能を保証するものではありません。医療行為ではありません。発送・返品・交換については、STORESの商品ページと特定商取引法に基づく表記をご確認ください。</p>
@@ -548,27 +735,40 @@ footer a{color:#b3a68a;text-decoration:none}
 </footer>
 
 <div class="sticky" id="sticky">
-  <a class="js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">¥79,800で迎える ＋送料¥1,000</a>
+  <a class="js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える｜総額80,800円</a>
+  <span class="js-before" hidden>11/26 受付開始</span>
   <span class="js-after" hidden>受付は終了しました</span>
 </div>
 
 <script>
-/* 購入ボタンは常に表示。11/30 0:00(JST)を過ぎたら受付終了表示に切り替える。締切カウントダウンは11/26 20:00から表示 */
+/* 受付ステータス：JST基準で3状態を切り替える
+   before = 11/26 0:00(JST)より前 → 「11/26 受付開始」案内（購入ボタンは出さない）
+   open   = 11/26 0:00 〜 11/30 0:00(JST) → 購入ボタン＋締切カウントダウン（残り日数）
+   after  = 11/30 0:00(JST)以降 → 「受付は終了しました」
+   確認用：URLに ?preview=before / ?preview=open / ?preview=after を付けると状態を固定表示 */
 (function(){
-  var OPEN=Date.parse('2026-11-26T20:00:00+09:00'), CLOSE=Date.parse('2026-11-30T00:00:00+09:00');
-  var q=location.search.indexOf('preview=open')>=0;
+  var START=Date.parse('2026-11-26T00:00:00+09:00'), END=Date.parse('2026-11-30T00:00:00+09:00');
+  var m=/[?&]preview=(before|open|after)/.exec(location.search), forced=m?m[1]:null;
   function all(c){return document.querySelectorAll(c)}
   function show(c,on){all(c).forEach(function(e){on?e.removeAttribute('hidden'):e.setAttribute('hidden','')})}
   function pad(n){return (n<10?'0':'')+n}
   var last='';
   function apply(){
-    var now=Date.now(), st=q?'open':(now>=CLOSE?'after':'open');
-    if(st!==last){show('.js-buy',st==='open');show('.js-after',st==='after');last=st}
-    var cd=document.getElementById('cd'), target=(st==='open'&&!q&&now>=OPEN)?CLOSE:0;
-    if(!target){cd.setAttribute('hidden','');return}
+    var now=Date.now();
+    var st=forced||(now<START?'before':(now>=END?'after':'open'));
+    if(st!==last){
+      show('.js-buy',st==='open');
+      show('.js-before',st==='before');
+      show('.js-after',st==='after');
+      var hl=document.getElementById('heroLimit');
+      if(hl) hl.textContent=(st==='before'?'11/26 受付開始':(st==='after'?'受付は終了しました':'受付 11/30(月)0:00まで'));
+      last=st;
+    }
+    var cd=document.getElementById('cd');
+    if(st!=='open'){cd.setAttribute('hidden','');return}
     cd.removeAttribute('hidden');
     document.getElementById('cdl').textContent='受付締切まで';
-    var s=Math.max(0,Math.floor((target-now)/1000));
+    var s=Math.max(0,Math.floor((END-now)/1000));
     document.getElementById('cdd').textContent=Math.floor(s/86400);
     document.getElementById('cdh').textContent=pad(Math.floor(s%86400/3600));
     document.getElementById('cdm').textContent=pad(Math.floor(s%3600/60));
@@ -582,10 +782,13 @@ footer a{color:#b3a68a;text-decoration:none}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08});
   els.forEach(function(e){io.observe(e)});
 })();
-/* sticky：ヒーローを過ぎたら表示 */
+/* sticky：why-stone の比較表を過ぎたら表示 */
 (function(){
-  var b=document.getElementById('sticky'), h=document.querySelector('.hero');
-  function f(){b.classList.toggle('show',window.scrollY>h.offsetHeight*.7)}
+  var b=document.getElementById('sticky'), t=document.querySelector('.cmp');
+  function f(){
+    if(!t){b.classList.add('show');return}
+    b.classList.toggle('show', t.getBoundingClientRect().bottom<0);
+  }
   addEventListener('scroll',f,{passive:true}); f();
 })();
 /* 金の粒 */
