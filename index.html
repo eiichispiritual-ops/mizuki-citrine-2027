@@ -332,6 +332,14 @@ footer a{color:#b3a68a;text-decoration:none}
 }
 @media(max-width:360px){.hero-title{font-size:33px}.hero-kicker{font-size:10px;letter-spacing:.12em}.price-now{font-size:50px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}html.js .rv>*{opacity:1;transform:none;transition:none}*{animation:none!important}#dust{display:none}}
+
+.deadline-callout{max-width:640px;margin:24px auto 32px;padding:24px 20px;text-align:center;border:1px solid #d25555;border-radius:4px;background:linear-gradient(135deg,#451c25,#25131c);color:#fff3e3;line-height:1.8}
+.deadline-tag{display:inline-block;padding:3px 14px;margin-bottom:12px;background:#a52d38;color:#fff;font:700 13px/1.8 var(--sans);letter-spacing:.06em;border-radius:2px}
+.deadline-callout strong{display:block;color:#fff0d7;font-size:19px;line-height:1.7}
+.deadline-callout p{margin:12px 0;font-size:14px;line-height:1.9}
+.deadline-date{display:block;font-size:13px;color:#ffd9cd}
+.deadline-callout a{display:block;margin-top:16px;color:#fff1bd;text-decoration:underline;text-underline-offset:5px;font-size:14px;font-weight:700}
+@media(max-width:680px){body>.deadline-callout{margin:20px 16px 32px}.deadline-callout strong{font-size:17px}}
 </style>
 </head>
 <body>
@@ -345,14 +353,14 @@ footer a{color:#b3a68a;text-decoration:none}
     <div class="hero-kicker">鑑定で選ばれた、あなたへのご案内</div>
     <p class="hero-en">BRAZILIAN CITRINE · 2027</p>
     <h1 class="hero-title"><span class="gg">実りの</span><br><span class="gg">シトリン</span></h1>
-    <p class="hero-lead">11月25日の夜にお返しした鑑定結果を、<br>毎朝、手に乗せられる形に。</p>
-    <p class="hero-sub">2027年は、あなたの番です。</p>
+    <p class="hero-lead">2027年も、自分のことは「また今度」ですか。<br>その願いを、毎朝思い出せる形に。</p>
+    <p class="hero-sub">2027年こそ、自分を後回しにしない。</p>
     <div><span class="hero-limit" id="heroLimit">受付 11/30(月)0:00まで</span></div>
 
     <div><a class="hero-plink" href="#price">お代とお届けを先に見る</a></div>
   </div>
   <div class="hero-foot">
-    <p class="hero-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</p>
+    <p class="hero-cap">実物の丸玉シトリンの写真です。天然石のため、色味・模様・大きさには個体差があります。</p>
     <div class="hero-countdown" id="heroCountdown" hidden role="timer" aria-label="受付終了までの残り時間">
       <span class="hero-countdown-label">受付終了まで、あと</span>
       <span class="hero-countdown-time"><b id="heroDays">0</b><small>日</small><b id="heroHours">00</b><small>時間</small><b id="heroMinutes">00</b><small>分</small><b id="heroSeconds">00</b><small>秒</small></span>
@@ -361,6 +369,7 @@ footer a{color:#b3a68a;text-decoration:none}
   </div>
 </div>
 
+<div class="deadline-callout js-buy"><span class="deadline-tag">受付締切が近づいています</span><strong>2027年こそ、<br>人生を変えたいあなたへ。</strong><p>「また今度」で、今年も終わらせない。<br>お迎えをご希望の方は、お早めに。</p><span class="deadline-date">2026年11月30日 00:00 受付終了</span><a href="#price">シトリンを迎える・価格を確認する →</a></div>
 <!-- TO YOU -->
 <section class="sec-a" id="to-you">
   <div class="wrap rv">
@@ -369,14 +378,14 @@ footer a{color:#b3a68a;text-decoration:none}
     <div class="orn"><i></i></div>
     <p>みづきです。</p>
     <p>このページは、シトリン鑑定で<strong>選ばれた方にだけ</strong>お送りしている、お迎えのご案内です。</p>
-    <p>11月25日の夜にお返しした結果は、文字でした。<br>文字は、1回読んだら終わってしまいます。<br>だから、あの結果を、<strong>毎朝手に乗せられる形にしました</strong>。</p>
-    <p>お代のことも、届くまでのことも、この1枚に書きました。ゆっくりで大丈夫です。</p>
+    <p>11月25日の夜にお返しした結果は、文字でした。<br>読んだときの気持ちを、忙しい毎日の中でも思い出してほしい。<br>だから、あの結果を、<strong>毎朝手に乗せられる形にしました</strong>。</p>
+    <p>家族の予定は決まっているのに、自分がしたいことは今年も保留。<br>2027年は、その順番を変えていきませんか。<strong>自分の願いを、毎日の予定に戻すために。</strong></p>
     <h3 class="center" style="font-size:19px;color:var(--sand);letter-spacing:.1em;margin:44px 0 0">覚えておいてほしいのは、3つだけ</h3>
     <!-- 図解A：3枚のカード -->
     <div class="trio">
       <div class="card"><span class="tag">原因</span><p>がんばったことを数えずに、すぐ次をがんばっている。これが<strong>「摘み忘れ」</strong>です。</p></div>
       <div class="card"><span class="tag">やること</span><p>夜に1つ数えて、朝、玄関で石に置く。</p></div>
-      <div class="card"><span class="tag">なぜ石なのか</span><p>自分で数えたものは、自分では受け取れないからです。石は、私が視て<strong>「もう実っている」と認めた印</strong>です。</p></div>
+      <div class="card"><span class="tag">なぜ石なのか</span><p>目に入り、手に触れるものなら、朝の習慣に結びつけられる。私が視て<strong>「もう実っている」と認めた印</strong>を、暮らしの中へ。</p></div>
     </div>
   </div>
 </section>
@@ -391,8 +400,8 @@ footer a{color:#b3a68a;text-decoration:none}
     <div class="orn"><i></i></div>
     <p>毎朝の家のこと。毎月のやりくり。職場で、人が嫌がる役を引き受けること。親の様子を見に行くこと。<br>この1年、やめずに続けてきたことを、1つだけ思い出してください。</p>
     <p>それを、数えたことはありますか。<br>たぶん、ないと思います。続けている人は、数える前に、次を始めてしまうからです。</p>
-    <p>私のところには、こんな言葉が届きます。<br>「家族に、ありがとうと言われたことがない」<br>「自由に使えるお金が、ない」<br>「家のことがいつも先で、自分の人生を削ってきた」<br>全部、同じことを言っています。<strong>これだけやってきたのに、自分には何も残っていない。</strong></p>
-    <p>私は2万人以上の方を視てきて、何度も同じものを視ました。私はこれを<em>「摘み忘れ」</em>と呼んでいます。</p>
+    <p>家族の用事を済ませて、仕事を終えて、ようやく一息つく夜。<br>自分がしたかったことには、今日も手をつけられなかった。<br>そんな日が重なると、こう感じることはありませんか。<strong>これだけやってきたのに、自分には何も残っていない。</strong></p>
+    <p>できなかったことばかり数えて、できたことは当たり前にしてしまう。<br>ここでは、その見落としを<em>「摘み忘れ」</em>と呼びます。</p>
     <!-- 図解B：洗濯物の比喩＋循環図 -->
     <figure class="fig" style="margin-left:0;margin-right:0">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
@@ -426,52 +435,30 @@ footer a{color:#b3a68a;text-decoration:none}
     </ul>
     <p style="margin-top:32px">1つでも、思い当たりましたか。<br>責めたいのではありません。</p>
     <p>数えずに次をがんばってきたのは、<strong>守るものがあったからです。</strong></p>
-    <p>足りないと思っているあいだは、頼めません。休めません。「ありがとう」も、受け取れません。<br>数えると、足りている分が見えてきます。</p>
-    <p>ただ、数えることはできても、<strong>受け取るところで止まってしまう</strong>。<br>摘み忘れの人は、そうなんです。</p>
+    <p>「まだ足りない」が口癖になると、休むことも、人に頼むことも後回しになりがちです。<br>まずは、今日できたことを1つ認める。そのうえで、明日は自分のために何をするかを選ぶ。</p>
+    <p><strong>「来年こそ」を、願ったままで終わらせない。</strong><br>そのために、思い出すきっかけを、毎朝通る場所に置くのです。</p>
   </div>
 </section>
 
 <!-- WHY EVERY MORNING -->
 <section class="sec-a" id="why-stone">
   <div class="wrap rv">
-    <span class="kicker">WHY EVERY MORNING</span>
-    <h2>自分で数えたものは、<br>自分では、<br>受け取れない。</h2>
+    <span class="kicker">WHY THIS CITRINE</span>
+    <h2>なぜ、このシトリンなのか。<br>願いを、しまい込まずに<br>毎朝、手に取るためです。</h2>
     <div class="orn"><i></i></div>
-    <!-- 図解D：2つの流れの比較 -->
+    <p>新しい年の目標を決めても、翌朝には家族や仕事の用事が始まる。<br>自分の願いは、また一番最後になる。<strong>変えたいのは、その毎朝の始まり方です。</strong></p>
     <div class="flows">
-      <div class="flow">
-        <h4>夜に数えただけだと</h4>
-        <div class="st">夜に、1つ数える</div>
-        <div class="ar">↓</div>
-        <div class="st">朝、また「足りない」に戻る</div>
-        <div class="ar">↓</div>
-        <div class="st">数え直しから、1日が始まる</div>
-      </div>
-      <div class="flow good">
-        <h4>認めた印があると</h4>
-        <div class="st">夜に、1つ数える</div>
-        <div class="ar">↓</div>
-        <div class="st">朝、玄関で認めた印に置く</div>
-        <div class="ar">↓</div>
-        <div class="st">「もう認められている」で出かける</div>
-      </div>
+      <div class="flow"><h4>願いを後回しにする朝</h4><div class="st">「今年こそ」と思う</div><div class="ar">↓</div><div class="st">目の前の用事に追われる</div><div class="ar">↓</div><div class="st">自分のことは、また今度</div></div>
+      <div class="flow good"><h4>これから始める朝の習慣</h4><div class="st">玄関で、シトリンを手に取る</div><div class="ar">↓</div><div class="st">昨日できたことを1つ認める</div><div class="ar">↓</div><div class="st">今日、自分のためにすることを決める</div></div>
     </div>
-    <p style="margin-top:32px">あなたが悪いのではありません。<br>人のほめ言葉を「まだまだです」と返す人が、自分のほめ言葉だけ受け取れるはずがないんです。</p>
-    <p>洗濯物も、「もう乾いているよ」と誰かに言ってもらって、初めてたためます。<br><em>自分以外の、その「誰か」が要ります。</em></p>
-    <h2 style="font-size:21px;margin-top:52px">なぜ、メモやノート<br>ではなく、この石なのか</h2>
-    <!-- 図解E：比較表 -->
-    <table class="cmp">
-      <thead><tr><th></th><th>認めるのは誰か</th><th>毎朝手に乗るか</th></tr></thead>
-      <tbody>
-        <tr><th>メモ・ノート</th><td>あなた自身</td><td class="x">―（書くのも読むのも、あなた）</td></tr>
-        <tr><th>家族・職場</th><td>言葉にしてもらえるとは限らない</td><td class="x">―</td></tr>
-        <tr><th>25日の鑑定結果</th><td>みづき</td><td class="x">×（文字は、1回読んで終わる）</td></tr>
-        <tr class="hl"><th>この石</th><td>みづきが視て、認めた印</td><td class="o">○（毎朝、手に乗る）</td></tr>
-      </tbody>
-    </table>
-    <p style="margin-top:32px">メモもノートも、書くのも読むのも、あなたです。<br>25日にお返しした結果は、私が視たものです。でも、文字は1回読んで終わってしまう。<br>だから、<strong>私が「もう実っている」と認めた印を、毎朝手に乗せられるものに移しました。</strong></p>
-    <p>ここだけ、少し私の話をさせてください。<br>私は、手のひらに置くものを人にお勧めしたことは、数えるほどしかありません。ものに頼ってほしくないからです。<br>それでも今回お渡しするのは、<strong>認める人がそばにいない方に、認めた印を残すため</strong>です。<br>だから、渡す前に視ます。鑑定が先で、石があと。この順番は、変えません。</p>
-    <div class="pull">鑑定は、足りないところを<br>探す仕事ではありません。<br><span class="nw">もう実っている分を、見つけて、</span><br><span class="nw">認める仕事です。</span></div>
+    <h2 style="font-size:22px;margin-top:48px">黄金色。丸い形。<br>そして、鑑定からつながる意味。</h2>
+    <div class="trio">
+      <div class="card"><span class="tag">目に入る</span><p>実った麦の穂を思わせる<strong>黄金色</strong>。「足りない」より、すでに積み重ねたものへ目を向ける印として選びました。</p></div>
+      <div class="card"><span class="tag">手に取る</span><p>毎朝、手のひらに乗せる<strong>丸玉</strong>。眺めるだけで終わらせず、一度立ち止まる時間をつくるための形です。</p></div>
+      <div class="card"><span class="tag">思い出す</span><p>私が視て、「もう実っている」と認めた印。<strong>鑑定で受け取った言葉を、暮らしの中へ持ち帰る</strong>ための一石です。</p></div>
+    </div>
+    <p style="margin-top:32px">ノートには、願いを言葉で残せます。この石は、玄関に置いて、目と手で思い出すためのもの。<br>「読む」だけで終わらず、<strong>「手に取って、今日の一歩を決める」</strong>ところまでつなげてほしいのです。</p>
+    <div class="pull">2027年を変えたい。<br>その想いに、<br><span class="nw">毎朝、触れられる場所を。</span></div>
   </div>
 </section>
 
@@ -512,7 +499,7 @@ footer a{color:#b3a68a;text-decoration:none}
     <figure class="fig" style="margin-left:0;margin-right:0">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
       <img src="img/citrine_sphere.jpg" alt="黄金色に澄んだ天然シトリン" width="1200" height="1112" loading="lazy">
-      <figcaption class="fig-cap">写真はイメージです。天然石のため、色味・形は1つ1つ異なります。</figcaption>
+      <figcaption class="fig-cap">実物の丸玉シトリンの写真です。天然石のため、色味・模様・大きさには個体差があります。</figcaption>
     </figure>
     <figure class="fig" style="margin-left:0;margin-right:0">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
@@ -538,10 +525,10 @@ footer a{color:#b3a68a;text-decoration:none}
         <b>朝、手に乗せる</b><p>出かける前に、玄関で石を手のひらに乗せる。</p></div>
       <div class="panel"><span class="no">03</span>
         <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linejoin="round"><circle cx="24" cy="24" r="15" fill="rgba(212,175,55,.12)"/><path d="M15 20a10 10 0 0 1 12-6M16 29q8-5 15 0"/></svg>
-        <b>石に置く</b><p>昨日数えた1つを、石に置く。</p></div>
+        <b>今日の一歩を決める</b><p>昨日できたことを1つ認めたら、今日、自分のためにすることを1つ決める。</p></div>
       <div class="panel"><span class="no">04</span>
         <svg viewBox="0 0 48 48" fill="none" stroke="#d4af37" stroke-width="1.6" stroke-linecap="round"><path d="M14 6h16v36H14z" fill="rgba(212,175,55,.12)"/><circle cx="26" cy="24" r="1.6" fill="#d4af37"/><path d="M34 24h8M39 20l4 4-4 4"/></svg>
-        <b>戻して、出る</b><p>それだけです。出かけない日も、朝、玄関で置いてください。</p></div>
+        <b>戻して、動く</b><p>石を元の場所へ。決めた一歩を、今日の予定に入れる。出かけない日も同じです。</p></div>
     </div>
     <figure class="fig" style="margin-left:0;margin-right:0">
       <span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span>
@@ -615,15 +602,17 @@ footer a{color:#b3a68a;text-decoration:none}
 <!-- HESITATE -->
 <section class="sec-b" id="hesitate">
   <div class="wrap rv">
-    <span class="kicker">FOR YOU</span>
-    <h2>「自分のために、<br>ものを迎えていいのか」と<br>迷っている方へ</h2>
+    <span class="kicker">YOUR NEXT YEAR</span>
+    <h2>2026年と同じように、<br>自分の願いを<br>後回しにして終えますか。</h2>
     <div class="orn"><i></i></div>
-    <p>貯金が先。家族が先。自分のことは、あとでいい。<br>そう生きてきた方ほど、迷うと思います。<br>その迷いは、間違いではありません。ずっとそうやって、守ってきたからです。</p>
-    <p>自分のために、迎えていいのか。<br><strong>これは、ご褒美ではありません。この1年、もう報われていた分を、認めた印です。</strong><br>あなたが受け取ることは、わがままではありません。</p>
-    <p><strong>お代が、軽くないこと。</strong><br>79,800円は、軽いお代ではありません。だから、このすぐ下に、隠さずに全部書きました。<br>迷うなら、迷ったままで大丈夫です。受付の締めまで、ゆっくり考えてください。</p>
-    <h2 style="margin-top:56px;font-size:22px">どうして、この冬なのか</h2>
-    <p>この1年をふり返る時期だから、この冬にご案内しています。<br>届く時期は、STORESの商品ページでご確認ください。</p>
-    <p class="center">受付は、<strong>11月30日(月) 0:00</strong>で締めます。</p>
+    <p>行きたかった場所。学んでみたかったこと。ゆっくり過ごしたかった時間。<br>「落ち着いたら」と思っているうちに、また一年が過ぎていく。</p>
+    <p><strong>2027年こそ、自分の人生にも予定を入れる。</strong><br>その決意を、毎朝思い出すために迎えるのが、実りのシトリンです。</p>
+    <h2 style="margin-top:48px;font-size:22px">79,800円で、<br>何を迎えるのか。</h2>
+    <p>お届けするのは、<strong>一つずつ光に透かして、色を見て選んだ天然シトリンの丸玉</strong>。お渡しする前に、私が視る一石です。</p>
+    <p>黄金色を眺める楽しみ。手のひらに乗せる朝の時間。鑑定の言葉を思い出し、自分の願いに立ち返る印。<br><strong>石そのものと、これから暮らしの中で使っていく意味</strong>を合わせて、お伝えしています。</p>
+    <p>この価格は、石のお代です。シトリン鑑定のお代はいただいていません。送料を含むお支払い総額は、この下に明記しています。</p>
+    <div class="pull">「来年こそ」を、<br>今年も言うだけで終わらせない。<br>自分のための一歩を、ここから。</div>
+    <p class="center">受付は、<strong>2026年11月30日 00:00まで</strong>。<br>お届け時期はSTORESの商品ページをご確認ください。</p>
   </div>
 </section>
 
@@ -633,7 +622,7 @@ footer a{color:#b3a68a;text-decoration:none}
     <span class="kicker">PRICE</span>
     <h2>お代と、お届け</h2>
     <div class="orn"><i></i></div>
-    <p>お代のことも、正直に書きます。</p>
+    <p>2027年、自分の願いを毎朝思い出すための一石を。</p>
     <p>1つずつ光に透かして選んだ、天然のシトリンです。渡す前に、私が視ます。<br>お代がかかるのは、この石だけです。シトリン鑑定のお代は、いただいていません。</p>
     <!-- 図解J：価格ボックス（内訳の見える化） -->
     <div class="price-stage">
@@ -649,7 +638,7 @@ footer a{color:#b3a68a;text-decoration:none}
           <div class="row"><span>1日あたり</span><span class="v">約221円</span></div>
           <div class="row total"><span>お支払い総額</span><span class="v">80,800円</span></div>
         </div>
-        <div style="font-size:11px;color:var(--dim);text-align:center;margin-top:8px;letter-spacing:.05em">1日あたりは、お支払い総額を365日で割った場合</div>
+        <div style="font-size:11px;color:var(--dim);text-align:center;margin-top:8px;letter-spacing:.05em">1日あたりは、お支払い総額を365日で割った参考値です。分割払いの金額ではありません。</div>
         <div class="price-badges"><span class="fill">受付 11/30(月)0:00まで</span><span>数に限りあり</span></div>
       </div>
     </div>
@@ -657,8 +646,9 @@ footer a{color:#b3a68a;text-decoration:none}
       <div class="cd-l" id="cdl">受付締切まで</div>
       <div class="cd-t"><span class="n" id="cdd">0</span><span class="u">日</span><span class="n" id="cdh">00</span><span class="u">時間</span><span class="n" id="cdm">00</span><span class="u">分</span></div>
     </div>
+<div class="deadline-callout js-buy"><span class="deadline-tag">受付締切が近づいています</span><strong>2027年こそ、<br>人生を変えたいあなたへ。</strong><p>「また今度」で、今年も終わらせない。<br>お迎えをご希望の方は、お早めに。</p><span class="deadline-date">2026年11月30日 00:00 受付終了</span></div>
     <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
-    <p class="cta-under js-buy">STORESの決済ページが開きます。注文確認メールが届けば、受付完了です。</p>
+    <p class="cta-under js-buy">お支払い総額 80,800円。STORESの決済ページが開きます。注文確認メールが届けば、受付完了です。</p>
     <p class="cta-under">効果・効能を保証するものではありません。</p>
     <div class="wait js-before" hidden>11/26 受付開始<small>受付は11月30日(月) 0:00まで</small></div>
     <div class="wait js-after" hidden>お迎えの受付は終了しました<small>ありがとうございました</small></div>
@@ -698,12 +688,12 @@ footer a{color:#b3a68a;text-decoration:none}
     <div>
       <details><summary>効果はありますか。</summary><div class="faq-a"><p>私が視て「もう実っている」と認めた印として、夜に数えた1つを朝の玄関で置くための天然石です。シトリンにまつわるお話は言い伝えです。効果・効能を保証するものではありません。</p></div></details>
       <details><summary>すでに石やお守りを置いていても、迎えていいですか。</summary><div class="faq-a"><p>はい。役割が違うので、いま置いているものの隣に置いていただけます。</p></div></details>
-      <details><summary>色や形は、写真と同じですか。</summary><div class="faq-a"><p>天然石のため、色味・模様・大きさは1つ1つ異なります。写真はイメージです。</p></div></details>
+      <details><summary>色や形は、写真と同じですか。</summary><div class="faq-a"><p>天然石のため、色味・模様・大きさは1つ1つ異なります。掲載写真は実物の丸玉シトリンです。お届けする一石ごとに個体差があります。</p></div></details>
       <details><summary>家族に知られずに受け取れますか。</summary><div class="faq-a"><p>中身の分からない無地の箱でお送りします。</p></div></details>
       <details><summary>分割で支払えますか。</summary><div class="faq-a"><p>クレジットカードでお支払いいただいた場合、お使いのカード会社のサービスで、あとから分割払いに変更できます。変更の方法や回数はカード会社によって異なりますので、カード会社にご確認ください。分割払いには、カード会社の手数料がかかる場合があります。</p></div></details>
       <details><summary>注文できたか分かりません。</summary><div class="faq-a"><p>STORESから注文確認メールが届いていれば受付済みです。届かない場合は、ご注文番号とお名前をLINEでお知らせください。カード番号や確認コードは送らないでください。</p></div></details>
       <details><summary>届く時期や、返品・交換について知りたいです。</summary><div class="faq-a"><p>STORESの商品ページと、特定商取引法に基づく表記をご確認ください。</p></div></details>
-      <details><summary>少し考えてから決めてもいいですか。</summary><div class="faq-a"><p>はい。受付は11月30日(月) 0:00までです。ゆっくり読んで、決めてください。</p></div></details>
+      <details><summary>受付はいつまでですか。</summary><div class="faq-a"><p>2026年11月30日 00:00までです。11月29日(日)の夜が最終受付となります。ご希望の方は、締切前にSTORESでお手続きください。</p></div></details>
     </div>
   </div>
 </section>
@@ -712,17 +702,17 @@ footer a{color:#b3a68a;text-decoration:none}
 <section class="final" id="final">
   <div class="wrap rv">
     <span class="kicker">FROM MIZUKI</span>
-    <h2>最後に</h2>
+    <h2>2027年こそ、<br>あなたの人生を前へ。</h2>
     <div class="orn"><i></i></div>
     <div class="portrait"><span class="fc tl"></span><span class="fc tr"></span><span class="fc bl"></span><span class="fc br"></span><img src="img/mizuki.jpg" alt="みづき" width="720" height="960" loading="lazy"></div>
     <div class="lead">
       <p>ずっと順番が後ろだったあなたへ。<strong>2027年は、あなたの番です。</strong></p>
-      <p>数えることは、今夜からできます。<br>その隣に、私が視て認めた印を、置いておきたい。<br>そう思って、このご案内をお送りしました。</p>
-      <p>不安なまま、ひとりにしないからね。</p>
+      <p>誰かの予定だけで、来年の手帳を埋めないで。<br>あなたが行きたい場所、やりたいこと、過ごしたい時間も書き込んでください。<br>その想いを毎朝思い出す場所に、このシトリンを。</p>
+      <p>「私のことは、また今度」を、ここで変えていきましょう。</p>
     </div>
     <p class="sig">みづき</p>
     <div class="peak">
-      <div class="l2">夜に数えた1つを、<br><em>朝、置く場所を。</em></div>
+      <div class="l2">2027年こそ、人生を変えたいあなたへ。<br><em>その決意を、毎朝手に取る形に。</em></div>
     </div>
     <a class="cta js-buy" href="https://pmsdqb4c2p0emj0yagvc.stores.jp/items/6ae7f9394e9163b99abdd42f">シトリンを迎える<small>79,800円（税込）＋送料1,000円</small></a>
     <p class="cta-under js-buy">STORESの決済ページが開きます。お支払い総額 80,800円</p>
